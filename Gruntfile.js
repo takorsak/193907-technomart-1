@@ -5,7 +5,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-browser-sync");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
-  grunt.loadNpmTasks("grunt-svgstore");
 
   grunt.initConfig({
     less: {
@@ -24,17 +23,6 @@ module.exports = function(grunt) {
           ]
         },
         src: "source/css/*.css"
-      }
-    },
-
-    svgstore: {
-      options: {
-        includeTitleElement: false
-      },
-      sprite: {
-        files: {
-          "source/img/sprite.svg": ["source/img/sprite-*.svg"]
-        }
       }
     },
 

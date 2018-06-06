@@ -1,76 +1,33 @@
-.logo {
-  width: 220px;
-  background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  background-color: #fffdfd;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
   text-decoration: none;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
-.logo--header {
-  padding-top: 12px;
-  padding-bottom: 17px;
-  padding-left: 55px;
-  padding-right: 38px;
+.button {
+  background-color: #ffffff;
+  border-radius: 2px;
+  text-align: center;
 }
-.logo--footer {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  padding-left: 41px;
-  padding-right: 18px;
-}
-.logo__text {
+.red {
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-}
-.logo--header .logo__text {
-  font-size: 24px;
-}
-.logo--footer .logo__text {
-  font-size: 30px;
-}
-.slider__item--drills {
-  background-image: url(../img/slider-drill.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.slider__item--punchers {
-  background-image: url(../img/slider-punch.jpg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.promo--materials {
-  background-image: url(../img/new-flag.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.product__flag {
-  background-image: url(../img/new-flag.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.services__item--delivery {
-  background-image: url(../img/lorry.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.services__item--guarantee {
-  background-image: url(../img/reward.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.services__item--credit {
-  background-image: url(../img/money.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.about-us__item {
-  background-image: url(../img/red-dush.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.modal__button-close {
-  background-image: url(../img/icon-close.svg);
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background-color: #ee3643;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
