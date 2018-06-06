@@ -10,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--top">
         <div class="page-header__content-wrapper">
-          <a class="logo logo--header" href="#"><span class="visually-hidden">Логотип "Техномарт"</span></a>
+          <a class="logo logo--header" href="#" area-label="Логотип"><span class="logo__text">Техномарт</span></a>
           <form class="search" action="#" method="get">
             <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
             <input class="search__field" type="text" name="search" placeholder="Поиск:">
@@ -321,7 +321,7 @@
       <div class="page-footer__wrapper page-footer__wrapper--top">
         <div class="page-footer__content-wrapper">
           <div class="page-footer__half-content-wrapper">
-            <a class="logo logo--footer" href="#"><span class="visually-hidden">Логотип "Техномарт"</span></a>
+            <a class="logo logo--footer" href="#"><span class="logo__text">Техномарт</span></a>
             <p class="page-footer__contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
           </div>
           <div class="page-footer__half-content-wrapper">малин
@@ -396,30 +396,16 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
+    <div class="modal visually-hidden">
       <div class="modal__block">
         <button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть форму</span>x</button>
-          <form class="form" action="#" method="post">
-            <div class="form__name">
-              <label class="form__title" for="name">Ваше имя:</label>
-              <input class="form__field form__field--name" id="name" type="text" name="name" placeholder="Имя Фамилия">
-            </div>
-            <div class="form__email">
-              <label class="form__title" for="email">Ваш e-mail:</label>
-              <input class="form__field form__field--email" id="email" type="text" name="email" placeholder="email@example.com">
-            </div>
-            <div class="form__text">
-              <label class="form__title" for="text">Текст письма:</label>
-              <input class="form__field form__field--text" id="text" type="text" name="text" placeholder="В свободной форме">
-            </div>
-          </form>
+        <span class="modal__text">Товар добавлен в корзину!</span>
       </div>
       <div class="modal__block modal__block--bottom">
-        <input class="button button--red button--submit" type="submit" value="Отправить">
-      </div>
-      <div class="modal modal--map">
-        <button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть карту</span>x</button>
-        <span class="visually-hidden">Карта расположения магазина</span>
+        <div class="modal__bundle">
+          <div class="button button--red">Оформить заказ</div>
+          <div class="button">Продолжить покупки</div>
+        </div>
       </div>
     </div>
   </body>
