@@ -1,7 +1,35 @@
+.page-header {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__wrapper {
+  width: 1200px;
+  padding-left: 130px;
+  padding-right: 130px;
+  box-sizing: border-box;
+}
+
 .page-header__wrapper--top {
   background-color: #293449;
 }
 
+.page-header__wrapper--top .page-header__content-wrapper {
+  display: flex;
+}
+
 .page-header__wrapper--bottom {
   background-color: #f3f7f8;
+  padding-bottom: 60px;
+}
+
+.page-header__wrapper--bottom .page-header__content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__content-wrapper {
+  width: 940px;
+  margin: 0 auto;
 }
