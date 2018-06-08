@@ -3,6 +3,11 @@
   width: 1200px;
 }
 
+.page-main--inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__block {
   padding: 0 130px;
   box-sizing: border-box;
@@ -17,10 +22,19 @@
   justify-content: space-between;
 }
 
+.page-main--inner .page-main__block {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main__block-wrapper {
   width: 940px;
   margin: 0 auto;
   padding-top: 60px;
+}
+
+.page-main--inner .page-main__block-wrapper {
+  padding-top: 0;
 }
 
 .page-main__block--secondary {

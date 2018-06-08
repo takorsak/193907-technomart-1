@@ -843,6 +843,15 @@ template {
 .page-main__block {
   width: 1200px;
 }
+.page-main--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .page-main__block {
   padding: 0 130px;
   -webkit-box-sizing: border-box;
@@ -860,10 +869,22 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.page-main--inner .page-main__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .page-main__block-wrapper {
   width: 940px;
   margin: 0 auto;
   padding-top: 60px;
+}
+.page-main--inner .page-main__block-wrapper {
+  padding-top: 0;
 }
 .page-main__block--secondary {
   background-color: #f4f7f9;
@@ -974,6 +995,9 @@ template {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .bread-crumbs__item a {
   text-decoration: none;
@@ -981,13 +1005,15 @@ template {
 }
 .bread-crumbs__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .bread-crumbs__item {
   background-image: url(../img/icon-right-small.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
-.bread-crumbs__item:nth-child(1) {
+.bread-crumbs__item--home {
   background-image: url(../img/icon-home.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -997,6 +1023,8 @@ template {
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
+  margin: 0;
+  padding: 0;
 }
 .content__subtitle {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1004,6 +1032,20 @@ template {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #f7f3ec;
+}
+.content--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content--inner .content__bloc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .form {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1068,6 +1110,9 @@ template {
 }
 .pagination__list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .inner-text__title {
   font-size: 30px;

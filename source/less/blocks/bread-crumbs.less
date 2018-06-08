@@ -3,6 +3,7 @@
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
 }
 
 .bread-crumbs__item a {
@@ -12,6 +13,8 @@
 
 .bread-crumbs__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .bread-crumbs__item {
@@ -20,7 +23,7 @@
   background-repeat: no-repeat;
 }
 
-.bread-crumbs__item:nth-child(1) {
+.bread-crumbs__item--home {
   background-image: url(../img/icon-home.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
