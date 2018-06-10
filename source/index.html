@@ -12,11 +12,11 @@
         <div class="page-header__content-wrapper">
           <a class="logo logo--header" href="#" area-label="Логотип"><span class="logo__text">Техномарт</span></a>
           <form class="search" action="#" method="get">
-            <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
             <input class="search__field" type="text" name="search" placeholder="Поиск:">
+            <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
           </form>
           <div class="button button--header button--bookmarks">
-            <svg class="button__image button__image--header" width="14" height="16"><use xlink:href="img/sprite.svg#sprite-icon-bookmarks"></use></svg>
+            <svg class="button__image button__image--header" width="14" height="16"><use xlink:href="img/sprite.svg#sprite-icon-bookmark"></use></svg>
             <a class="button__link button__link--header">Закладки: 0</a>
           </div>
           <div class="button button--header button--cart">
@@ -29,7 +29,7 @@
       <div class="page-header__wrapper page-header__wrapper--bottom">
         <div class="page-header__content-wrapper">
           <div class="header-info">
-            <p class="header-info__text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <p class="header-info__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
             <div class="header-contacts">
               <div class="header-contacts__phone">
                 <svg class="header-contacts__image" width="19" height="19"><use xlink:href="img/sprite.svg#sprite-icon-phone"></use></svg>
@@ -50,25 +50,25 @@
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a>Главная</a>
+                <a class="main-nav__link main-nav__link--home">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Компания</a>
+                <a class="main-nav__link" href="#">Компания</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Каталог</a>
+                <a class="main-nav__link" href="catalog.html">Каталог</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Новости</a>
+                <a class="main-nav__link" href="#">Новости</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Спецпредложения</a>
+                <a class="main-nav__link" href="#">Спецпредложения</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Доставка</a>
+                <a class="main-nav__link" href="#">Доставка</a>
               </li>
               <li class="main-nav__item">
-                <a href="#">Контакты</a>
+                <a class="main-nav__link main-nav__link--contacts" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -82,10 +82,9 @@
           <section class="promo-bloc">
             <h2 class="visually-hidden">Промо-блоки</h2>
             <div class="promo-bloc__top">
-              <div class="promo promo--materials">
+              <div class="promo promo--materials promo--new">
                 <span class="promo__title">Материалы</span>
                 <a class="button promo__button" href="#">На любой вкус</a>
-                <svg class="promo__image" width="44" height="65"><use xlink:href="img/sprite.svg#sprite-icon-1"></use></svg>
               </div>
               <div class="promo promo--tools">
                 <span class="promo__title">Инструмент</span>

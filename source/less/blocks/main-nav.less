@@ -6,10 +6,39 @@
 .main-nav__list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.main-nav__item a {
+.main-nav__link {
   text-decoration: none;
   color: @light;
   line-height: 17px;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 18px;
+}
+
+.main-nav__link:hover {
+  background-color: #293449;
+}
+
+.main-nav__link:active {
+  background-color: #293449;
+  color: rgba(225, 225, 225, 0.3);
+}
+
+.main-nav__link {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-nav__link--home {
+  padding-left: 51px;
+  padding-right: 34px;
+}
+
+.main-nav__link--contacts {
+  padding-left: 34px;
+  padding-right: 54px;
 }
