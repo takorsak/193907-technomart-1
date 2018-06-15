@@ -1,16 +1,20 @@
 .promo {
   color: @light;
   width: 300px;
-  padding: 23px;
+  padding: 20px;
+  padding-left: 22px;
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__title {
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .promo--materials {
@@ -22,38 +26,59 @@
   content: "";
   position: absolute;
   top: 30px;
-  left: 210px;
+  left: 213px;
   width: 55px;
   height: 75px;
-
-  background-image: url(../img/icon-1.png);
+  background-image: url(../img/icon-1.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
-
-  z-index: 2;
+  z-index: 1;
 }
 
 .promo--materials::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 240px;
+  width: 60px;
+  height: 60px;
   background-image: url(../img/new-flag.png);
   background-position: 0 0;
   background-repeat: no-repeat;
+  z-index: 2;
 }
-
-
-/*
-.promo--new {
-  background-image: url(../img/new-flag.png);
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}*/
 
 .promo--tools {
   background-color: #3bbce3;
   margin-right: 20px;
 }
 
+.promo--tools::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 198px;
+  width: 78px;
+  height: 75px;
+  background-image: url(../img/icon-2.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .promo--equipment {
   background-color: #dc91d8;
+}
+
+.promo--equipment::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 190px;
+  width: 80px;
+  height: 75px;
+  background-image: url(../img/icon-3.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .promo--sale {
@@ -61,8 +86,32 @@
   margin-bottom: 20px;
 }
 
+.promo--sale::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 195px;
+  width: 62px;
+  height: 75px;
+  background-image: url(../img/icon-4.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .promo--delivery {
   background-color: #ffc047;
+}
+
+.promo--delivery::after {
+  content: "";
+  position: absolute;
+  top: 32px;
+  left: 190px;
+  width: 80px;
+  height: 75px;
+  background-image: url(../img/icon-5.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .promo__button {
@@ -72,4 +121,24 @@
   background-color: rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  width: 135px;
+}
+
+.promo__button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo__button:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.promo--equipment .promo__button,
+.promo-bloc__blocks-bundle .promo__button {
+  margin-left: 0;
+}
+
+.promo-bloc__blocks-bundle .promo__title {
+  margin-bottom: 13px;
 }

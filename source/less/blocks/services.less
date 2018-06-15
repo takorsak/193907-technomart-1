@@ -1,18 +1,24 @@
 .services {
   width: 940px;
   margin: 0 auto;
-  padding-top: 67px;
-  padding-bottom: 102px;
+  padding-top: 65px;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
 }
 
 .services__top {
   padding-right: 540px;
+  margin-bottom: 70px;
 }
 
 .services__bottom {
   display: flex;
+}
+
+.services__item--buttons {
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
 }
 
 .services__item--delivery {
@@ -34,15 +40,19 @@
 }
 
 .services__title {
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .services__text {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
 }
 
 .services__subtitle {
@@ -58,14 +68,33 @@
 }
 
 .services__button {
+  width: 240px;
   font-size: 21px;
   line-height: 30px;
+  font-weight: 700;
   color: @light;
   background-color: #32425c;
   border: none;
+  text-align: left;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  padding-left: 21px;
 }
 
-.services__button--current {
+.services__item--guarantee .services__button {
+  padding-top: 14px;
+  padding-left: 22px;
+}
+
+.services__item--credit .services__button {
+  padding-top: 13px;
+}
+
+.services__item--current .services__button {
   color: #32425c;
   background-color: @light;
+}
+
+.services__item--current {
+  border: none;
 }

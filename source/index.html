@@ -82,19 +82,17 @@
           <section class="promo-bloc">
             <h2 class="visually-hidden">Промо-блоки</h2>
             <div class="promo-bloc__top">
-              <div class="promo promo--materials promo--new">
+              <div class="promo promo--materials">
                 <span class="promo__title">Материалы</span>
                 <a class="button promo__button" href="#">На любой вкус</a>
               </div>
               <div class="promo promo--tools">
                 <span class="promo__title">Инструмент</span>
                 <a class="button promo__button" href="#">На все случаи</a>
-                <svg class="promo__image" width="75" height="61"><use xlink:href="img/sprite.svg#sprite-icon-2"></use></svg>
               </div>
               <div class="promo promo--equipment">
                 <span class="promo__title">Техника</span>
                 <a class="button promo__button" href="#">Для стройки</a>
-                <svg class="promo__image" width="78" height="62"><use xlink:href="img/sprite.svg#sprite-icon-3"></use></svg>
               </div>
             </div>
             <div class="promo-bloc__bottom">
@@ -102,17 +100,21 @@
                 <h2 class="visually-hidden">Слайдер с товарами</h2>
                 <ul class="slider__list">
                   <li class="slider__item slider__item--drills">
-                    <span class="slider__title">Дрели</span>
-                    <span class="slider__subtitle">Соседям на радость!</span>
-                    <a class="button button--red" href="#">Открыть каталог</a>
+                    <div class="slider__wrapper">
+                      <span class="slider__title">Дрели</span>
+                      <span class="slider__subtitle">Соседям на радость!</span>
+                      <a class="button button--red slider__button" href="catalog.html">Открыть каталог</a>
+                    </div>
                   </li>
                   <li class="slider__item slider__item--punchers visually-hidden">
-                    <span class="slider__title">Перфораторы</span>
-                    <span class="slider__subtitle">Настоящие мужские игрушки</span>
-                    <a class="button button--red" href="#">Открыть каталог</a>
+                    <div class="slider__wrapper">
+                      <span class="slider__title">Перфораторы</span>
+                      <span class="slider__subtitle">Настоящие мужские игрушки</span>
+                      <a class="button button--red slider__button" href="catalog.html">Открыть каталог</a>
+                    </div>
                   </li>
                 </ul>
-                <ul class="dots dots__list visually-hidden">
+                <ul class="dots dots__list">
                   <li class="dots__item">
                     <button class="dots__button" type="button"><span class="visually-hidden">Переход к слайду 1</span></button>
                   </li>
@@ -120,7 +122,7 @@
                     <button class="dots__button dots__button--current" type="button" disabled><span class="visually-hidden">Переход к слайду 2</span></button>
                   </li>
                 </ul>
-                <ul class="arrows arrows__list visually-hidden">
+                <ul class="arrows arrows__list">
                   <li class="arrows__item">
                     <button class="arrows__button arrows__button--left" type="button"><span class="visually-hidden">Переход к предыдущему слайду</span></button>
                   </li>
@@ -133,12 +135,10 @@
                 <div class="promo promo--sale">
                   <span class="promo__title">Скидки 50%</span>
                   <a class="button promo__button" href="#">На 350 товаров</a>
-                  <svg class="promo__image" width="59" height="72"><use xlink:href="img/sprite.svg#sprite-icon-4"></use></svg>
                 </div>
                 <div class="promo promo--delivery">
                   <span class="promo__title">Доставка</span>
                   <a class="button promo__button" href="#">Бесплатно</a>
-                  <svg class="promo__image" width="78" height="63"><use xlink:href="img/sprite.svg#sprite-icon-5"></use></svg>
                 </div>
               </div>
             </div>
@@ -146,16 +146,19 @@
           <section class="popular popular--products">
             <div class="popular__top">
               <h2 class="popular__title">Популярные товары:</h2>
-              <a class="button button--red" href="#">Все популярные товары</a>
+              <a class="button button--red popular__button" href="#">Все популярные товары</a>
             </div>
             <ul class="product product__list">
               <li class="product__item">
                 <div class="product__overlay">
-                  <a class="button button--product-buy">Купить</a>
+                  <a class="button button--product-buy">
+                    <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                    <span>Купить</span>
+                  </a>
                   <a class="button button--product-bookmarks">В закладки</a>
                 </div>
                 <p>
-                  <img class="product__image" src="img/9000.jpg" alt="Перфоратор BOSCH BFG 9000">
+                  <img class="product__image product__image--9000" width="190" height="120" src="img/9000.jpg" alt="Перфоратор BOSCH BFG 9000">
                 </p>
                 <h3 class="product__title">Перфоратор BOSCH BFG 9000</h3>
                 <span class="product__price product__price--old">32500 Р.</span>
@@ -164,11 +167,14 @@
               </li>
               <li class="product__item">
                 <div class="product__overlay">
-                  <a class="button button--product-buy">Купить</a>
+                  <a class="button button--product-buy">
+                    <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                    <span>Купить</span>
+                  </a>
                   <a class="button button--product-bookmarks">В закладки</a>
                 </div>
                 <p>
-                  <img class="product__image" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+                  <img class="product__image product__image--3000" width="190" height="120" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
                 </p>
                 <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
                 <span class="product__price product__price--old">22500 Р.</span>
@@ -177,11 +183,14 @@
               </li>
               <li class="product__item">
                 <div class="product__overlay">
-                  <a class="button button--product-buy">Купить</a>
+                  <a class="button button--product-buy">
+                    <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                    <span>Купить</span>
+                  </a>
                   <a class="button button--product-bookmarks">В закладки</a>
                 </div>
                 <p>
-                  <img class="product__image" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
+                  <img class="product__image product__image--6000" width="190" height="120" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
                 </p>
                 <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
                 <span class="product__price product__price--old">30500 Р.</span>
@@ -190,11 +199,14 @@
               </li>
               <li class="product__item product__flag">
                 <div class="product__overlay">
-                  <a class="button button--product-buy">Купить</a>
+                  <a class="button button--product-buy">
+                    <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                    <span>Купить</span>
+                  </a>
                   <a class="button button--product-bookmarks">В закладки</a>
                 </div>
                 <p>
-                  <img class="product__image" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+                  <img class="product__image product__image--2000" width="190" height="120" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
                 </p>
                 <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
                 <span class="product__price product__price--new">12500 P.</span>
@@ -205,55 +217,55 @@
           <section class="popular popular--brands">
             <div class="popular__top">
               <h2 class="popular__title">Популярные производители:</h2>
-              <a class="button button--red" href="#">Все товары</a>
+              <a class="button button--red popular__button" href="#">Все производители</a>
             </div>
             <ul class="popular__list">
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--bosch">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда BOSCH</span>
-                  <img class="brand__image" src="img/bosch.png" alt="Логотип BOSCH">
+                  <img class="brand__image" width="190" height="80" src="img/bosch.png" alt="Логотип BOSCH">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--makita">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда Makita</span>
-                  <img class="brand__image" src="img/makita.png" alt="Логотип Makita">
+                  <img class="brand__image" width="190" height="80" src="img/makita.png" alt="Логотип Makita">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--dewalt">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда DeWALT</span>
-                  <img class="brand__image" src="img/dewalt.png" alt="Логотип DeWALT">
+                  <img class="brand__image" width="190" height="80" src="img/dewalt.png" alt="Логотип DeWALT">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--interskol">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда Интерскол</span>
-                  <img class="brand__image" src="img/interskol.png" alt="Логотип Интерскол">
+                  <img class="brand__image" width="190" height="80" src="img/interskol.png" alt="Логотип Интерскол">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--hitachi">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда Hitachi</span>
-                  <img class="brand__image" src="img/hitachi.png" alt="Логотип Hitachi">
+                  <img class="brand__image" width="190" height="80" src="img/hitachi.png" alt="Логотип Hitachi">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--lg">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда LG</span>
-                  <img class="brand__image" src="img/lg.png" alt="Логотип LG">
+                  <img class="brand__image" width="190" height="80" src="img/lg.png" alt="Логотип LG">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--aeg">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда AEG</span>
-                  <img class="brand__image" src="img/aeg.png" alt="Логотип AEG">
+                  <img class="brand__image" width="190" height="80" src="img/aeg.png" alt="Логотип AEG">
                 </a>
               </li>
-              <li class="brand brand__item">
+              <li class="brand brand__item brand__item--metabo">
                 <a class="brand__link" href="#">
                   <span class="visually-hidden">К товарам бренда Metabo</span>
-                  <img class="brand__image" src="img/metabo.png" alt="Логотип Metabo">
+                  <img class="brand__image" width="190" height="80" src="img/metabo.png" alt="Логотип Metabo">
                 </a>
               </li>
             </ul>
@@ -268,13 +280,13 @@
           </div>
           <div class="services__bottom">
             <ul class="services__list services__list--buttons">
-              <li class="services__item services__item--buttons">
-                <button class="services__button services__button--current" type="button">Доставка</button>
+              <li class="services__item services__item--buttons services__item--current services__item--delivery">
+                <button class="services__button" type="button">Доставка</button>
               </li>
-              <li class="services__item services__item--buttons">
+              <li class="services__item services__item--buttons services__item--guarantee">
                 <button class="services__button" type="button">Гарантия</button>
               </li>
-              <li class="services__item services__item--buttons">
+              <li class="services__item services__item--buttons services__item--credit">
                 <button class="services__button" type="button">Кредит</button>
               </li>
             </ul>

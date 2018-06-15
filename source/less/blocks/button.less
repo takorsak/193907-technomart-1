@@ -2,13 +2,23 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 12px 0 ;
+  padding-top: 11px;
+  padding-bottom: 9px;
   text-align: center;
+  border-radius: 3px;
 }
 
 .button--red {
   background-color: @danger;
   color: @light;
+}
+
+.button--red:hover {
+  background-color: #ca2c37;
+}
+
+.button--red:active {
+  background-color: #ba2732;
 }
 
 .button--header {
@@ -39,12 +49,46 @@
 }
 
 .button--product-buy {
+  color: #ffffff;
   background-color: #63a63e;
+  border-bottom: 3px solid #367315;
+  margin-bottom: 8px;
+}
+
+.button--product-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.button--product-buy:hover .button__image--cart {
+  fill: #ffffff;
+}
+
+.button--product-buy:active {
+  background-color: #518534;
+  border-bottom: 3px solid #518534;
+}
+
+.button--product-buy,
+.button--product-bookmarks {
+  width: 135px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 8px;
 }
 
 .button--product-bookmarks {
   color: #32425c;
   border: 3px solid #63a63e;
+  padding-top: 6px;
+}
+
+.button--product-bookmarks:hover {
+  border: 3px solid #32425c;
+}
+
+.button--product-bookmarks:active {
+  color: #c1c6ce;
+  border: 3px solid #c1c6ce;
 }
 
 .button__link--header,
@@ -72,6 +116,7 @@
 .button--order {
   padding-top: 13px;
   background-color: #63a63e;
+  border-radius: 0;
 }
 
 .button--order:hover {
@@ -81,4 +126,11 @@
 .button--order:active {
   background-color: #518534;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button__image--cart {
+  position: absolute;
+  top: 54px;
+  left: 57px;
+  fill: rgba(255, 255, 255, 0.3);
 }
