@@ -27,18 +27,34 @@
 
 .page-footer__wrapper--top {
   background-color: #32425c;
-  padding-bottom: 52px;
+  padding-bottom: 42px;
 }
 
-.page-footer__half-content-wrapper {
+.page-footer__half {
   display: flex;
   flex-direction: column;
+  width: 380px;
+}
+
+.page-footer__half--second {
+  width: 560px;
+  padding-top: 38px;
 }
 
 .footer-navigation {
+  font-size: 18px;
+  line-height: 24px;
   display: flex;
   margin: 0;
   padding: 0;
+  padding-left: 12px;
+  justify-content: space-between;
+  margin-bottom: 33px;
+}
+
+.footer-navigation--secondary {
+  padding-left: 35px;
+  justify-content: space-between;
 }
 
 .page-footer__contacts {
@@ -46,6 +62,9 @@
   font-size: 18px;
   line-height: 24px;
   margin: 0;
+  margin-top: 28px;
+  margin-left: 3px;
+  width: 330px;
 }
 
 .page-footer__contacts a {
@@ -57,6 +76,8 @@
   font-size: 16px;
   line-height: 18px;
   color: @light;
+  width: 240px;
+  margin-right: 150px;
 }
 
 .page-footer__mail-box,
@@ -64,6 +85,7 @@
   font-size: 16px;
   line-height: 18px;
   color: @light;
+  width: 140px;
 }
 
 .page-footer__email {

@@ -1,20 +1,59 @@
+.about-us {
+  width: 540px;
+}
+
 .about-us__item {
+  padding-left: 37px;
+  position: relative;
+}
+
+.about-us__item:nth-child(1)::before,
+.about-us__item:nth-child(2)::before,
+.about-us__item:nth-child(3)::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
   background-image: url(../img/red-dush.png);
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
+.about-us__item:nth-child(1),
+.about-us__item:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+.about-us__item:nth-child(3) {
+  margin-bottom: 35px;
+}
+
 .about-us__title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .about-us__text {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  width: 522px;
+  margin-bottom: 23px;
+}
+
+.about-us__text--second {
+  width: 390px;
+  margin-bottom: 21px;
 }
 
 .about-us__list {
@@ -23,4 +62,9 @@
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+.about-us .button--red {
+  display: block;
+  width: 220px;
 }

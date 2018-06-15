@@ -1,19 +1,44 @@
 .services {
   width: 940px;
   margin: 0 auto;
-  padding-top: 65px;
-  padding-bottom: 120px;
+  padding-top: 66px;
   display: flex;
   flex-direction: column;
 }
 
 .services__top {
   padding-right: 540px;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .services__bottom {
   display: flex;
+  position: relative;
+}
+
+.services__bottom::after {
+  content: "";
+
+  position: absolute;
+  top: -40px;
+  left: 230px;
+
+  width: 10px;
+  height: 279px;
+
+  background-image: url(../img/service-shadow.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.services__button:hover {
+  background-color: #293449;
+}
+
+.services__button:active {
+  color: #32425c;
+  background-color: #ffffff;
 }
 
 .services__item--buttons {
@@ -23,20 +48,37 @@
 
 .services__item--delivery {
   background-image: url(../img/lorry.png);
-  background-position: 0 0;
+  background-position: 74% 23px;
   background-repeat: no-repeat;
 }
 
 .services__item--guarantee {
   background-image: url(../img/reward.png);
-  background-position: 0 0;
+  background-position: 82% 0;
   background-repeat: no-repeat;
 }
 
 .services__item--credit {
   background-image: url(../img/money.png);
-  background-position: 0 0;
+  background-position: 78% 0;
   background-repeat: no-repeat;
+}
+
+.services__item--credit .button--red {
+  display: block;
+  width: 195px;
+}
+
+.services__item--delivery {
+  padding-bottom: 130px;
+}
+
+.services__item--guarantee {
+  padding-bottom: 105px;
+}
+
+.services__item--credit {
+  padding-bottom: 113px;
 }
 
 .services__title {
@@ -55,10 +97,29 @@
   margin: 0;
 }
 
+.services__bottom .services__text {
+  width: 275px;
+}
+
+.services__item--guarantee .services__text {
+  width: 379px;
+}
+
+.services__item--credit .services__text {
+  width: 382px;
+  margin-bottom: 26px;
+}
+
 .services__subtitle {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #32425c;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+  margin-bottom: 24px;
 }
 
 .services__list {
@@ -76,18 +137,19 @@
   background-color: #32425c;
   border: none;
   text-align: left;
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
   padding-left: 21px;
 }
 
-.services__item--guarantee .services__button {
-  padding-top: 14px;
+.services__item--guarantee-button .services__button {
+  padding-top: 12px;
   padding-left: 22px;
 }
 
 .services__item--credit .services__button {
   padding-top: 13px;
+  padding-bottom: 16px;
 }
 
 .services__item--current .services__button {
@@ -97,4 +159,13 @@
 
 .services__item--current {
   border: none;
+}
+
+.services__item--content {
+  width: 700px;
+  padding-left: 80px;
+}
+
+.services__list--buttons {
+  padding-top: 5px;
 }
