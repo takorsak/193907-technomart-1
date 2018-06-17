@@ -400,9 +400,9 @@ template {
   border-bottom: 5px solid #b52933;
 }
 .logo--footer {
-  padding-top: 20px;
-  padding-bottom: 12px;
-  padding-left: 41px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+  padding-left: 42px;
   padding-right: 18px;
 }
 .logo__text {
@@ -737,7 +737,7 @@ template {
 .services {
   width: 940px;
   margin: 0 auto;
-  padding-top: 66px;
+  padding-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,7 +748,7 @@ template {
 }
 .services__top {
   padding-right: 540px;
-  margin-bottom: 65px;
+  margin-bottom: 67px;
 }
 .services__bottom {
   display: -webkit-box;
@@ -907,7 +907,7 @@ template {
   margin-bottom: 20px;
 }
 .about-us__item:nth-child(3) {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 .about-us__title {
   font-size: 30px;
@@ -915,7 +915,7 @@ template {
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 .about-us__text {
   font-family: "PT Sans", Arial, sans-serif;
@@ -923,11 +923,11 @@ template {
   line-height: 24px;
   margin: 0;
   width: 522px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 .about-us__text--second {
   width: 390px;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 .about-us__list {
   list-style: none;
@@ -964,8 +964,15 @@ template {
 }
 .page-header__wrapper {
   min-width: 1200px;
-  padding-left: 130px;
-  padding-right: 130px;
+  padding-left: 120px;
+  padding-right: 120px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-header__middle-wrapper {
+  min-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1163,15 +1170,15 @@ template {
   margin: 0;
   padding-left: 52px;
   padding-right: 70px;
-  padding-top: 48px;
-  padding-bottom: 35px;
+  padding-top: 50px;
+  padding-bottom: 33px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .header-contacts {
   width: 270px;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  padding-top: 46px;
+  padding-bottom: 33px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1190,8 +1197,8 @@ template {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-  margin-left: 10px;
-  margin-top: 2px;
+  margin-left: 11.5px;
+  margin-top: 3px;
 }
 .header-contacts__phone {
   border: 3px solid #ffffff;
@@ -1225,8 +1232,8 @@ template {
   padding: 0;
   margin: 0;
   padding-left: 68px;
-  padding-top: 45px;
-  padding-bottom: 65px;
+  padding-top: 47px;
+  padding-bottom: 66px;
 }
 .user-nav__item {
   background-color: #ffffff;
@@ -1381,7 +1388,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 21.5px;
 }
 .popular--products .button--red,
 .popular--brands .button--red {
@@ -1403,6 +1410,13 @@ template {
 .page-main__block {
   min-width: 1200px;
 }
+.page-main__middle-block {
+  min-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .page-main--inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1413,15 +1427,15 @@ template {
           flex-direction: column;
 }
 .page-main__block {
-  padding: 0 130px;
+  padding: 0 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .page-main__content-wrapper {
   width: 940px;
   margin: 0 auto;
-  padding-top: 81px;
-  padding-bottom: 86px;
+  padding-top: 78px;
+  padding-bottom: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1441,7 +1455,7 @@ template {
 .page-main__block-wrapper {
   width: 940px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 58px;
 }
 .page-main--inner .page-main__block-wrapper {
   padding-top: 0;
@@ -1452,14 +1466,14 @@ template {
 }
 .contacts {
   width: 400px;
-  padding-left: 116px;
+  padding-left: 117px;
 }
 .contacts__title {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 .contacts__text {
   font-family: "PT Sans", Arial, sans-serif;
@@ -1467,11 +1481,11 @@ template {
   line-height: 24px;
   margin: 0;
   width: 183px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 .contacts__map {
   background-color: #e2e1dc;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 .contacts .button--red {
   display: block;
@@ -1481,8 +1495,15 @@ template {
 .page-footer__wrapper {
   min-width: 1200px;
 }
+.page-footer__middle-wrapper {
+  min-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 .page-footer__wrapper {
-  padding: 0 130px;
+  padding: 0 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #293449;
@@ -1499,12 +1520,12 @@ template {
   padding: 0;
 }
 .page-footer__wrapper--bottom {
-  padding-top: 35px;
+  padding-top: 36px;
   padding-bottom: 28px;
 }
 .page-footer__wrapper--top {
   background-color: #32425c;
-  padding-bottom: 42px;
+  padding-bottom: 41px;
 }
 .page-footer__half {
   display: -webkit-box;
@@ -1520,6 +1541,45 @@ template {
   width: 560px;
   padding-top: 38px;
 }
+.page-footer__contacts {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 28px;
+  margin-left: 5px;
+  width: 330px;
+}
+.page-footer__contacts a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.page-footer__copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 240px;
+  margin-top: 1px;
+  margin-left: 2px;
+  margin-right: 120px;
+}
+.page-footer__mail-box,
+.page-footer__developer {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.page-footer__mail-box {
+  width: 140px;
+  margin-left: 114px;
+}
+.page-footer__developer {
+  width: 102px;
+  margin-left: 48px;
+}
+.page-footer__email {
+  color: #ffd180;
+}
 .footer-navigation {
   font-size: 18px;
   line-height: 24px;
@@ -1532,43 +1592,13 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 }
 .footer-navigation--secondary {
   padding-left: 35px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.page-footer__contacts {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-  margin-top: 28px;
-  margin-left: 3px;
-  width: 330px;
-}
-.page-footer__contacts a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.page-footer__copyright {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  width: 240px;
-  margin-right: 150px;
-}
-.page-footer__mail-box,
-.page-footer__developer {
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  width: 140px;
-}
-.page-footer__email {
-  color: #ffd180;
 }
 .footer-navigation__list {
   list-style: none;
@@ -1591,6 +1621,33 @@ template {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-left: 30px;
+}
+.social__item {
+  background-color: #212a3a;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  position: relative;
+}
+.social__link {
+  position: absolute;
+  top: 11px;
+  left: 6px;
+  width: 40px;
+  height: 40px;
+}
+.social__item--vk,
+.social__item--fb {
+  margin-right: 5px;
+}
+.social__item--fb .social__link {
+  top: 8px;
+  left: 13px;
+}
+.social__item--insta .social__link {
+  top: 8px;
+  left: 9px;
 }
 .bread-crumbs {
   font-family: "PT Sans", Arial, sans-serif;
