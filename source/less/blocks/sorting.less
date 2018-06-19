@@ -2,15 +2,16 @@
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
-}
-
-.sorting__title {
   background-color: #f7f3ec;
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 22px;
 }
 
 .sorting__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting__item a {
@@ -22,4 +23,55 @@
 .sorting__item .sorting__current {
   color: @danger;
   text-decoration: none;
+}
+
+.sorting__list--type {
+  display: flex;
+}
+
+.sorting__title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  margin-right: 140px;
+}
+
+.sorting__item {
+  padding-top: 10px;
+}
+
+.sorting__item:nth-child(1) {
+  margin-right: 71px;
+}
+
+.sorting__item:nth-child(2) {
+  margin-right: 66px;
+}
+
+.sorting__list--order {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.sorting__list--order .sorting__item {
+  margin: 0;
+  padding: 0;
+  padding-top: 11px;
+}
+
+.sorting__list--order .sorting__item:nth-child(1) {
+  margin-left: 46px;
+}
+
+.sorting__list--order .sorting__item:nth-child(2) {
+  margin-left: 22px;
+}
+
+.sorting__image {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__current .sorting__image {
+  fill: #ee3643;
 }
