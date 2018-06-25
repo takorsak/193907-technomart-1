@@ -122,10 +122,10 @@
                   </ul>
                   <ul class="dots dots__list">
                     <li class="dots__item">
-                      <button class="dots__button" type="button"><span class="visually-hidden">Переход к слайду 1</span></button>
+                      <button class="dots__button dots__button--left" type="button"><span class="visually-hidden">Переход к слайду 1</span></button>
                     </li>
                     <li class="dots__item">
-                      <button class="dots__button" type="button" disabled><span class="visually-hidden">Переход к слайду 2</span></button>
+                      <button class="dots__button dots__button--right" type="button" disabled><span class="visually-hidden">Переход к слайду 2</span></button>
                     </li>
                   </ul>
                   <ul class="arrows arrows__list">
@@ -155,7 +155,7 @@
                 <a class="button button--red popular__button" href="#">Все популярные товары</a>
               </div>
               <ul class="product product__list">
-                <li class="product__item">
+                <li class="product__item product__item--index">
                   <div class="product__overlay">
                     <a class="button button--product-buy">
                       <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
@@ -170,7 +170,7 @@
                   <span class="product__price product__price--old">32500 Р.</span>
                   <span class="product__price product__price--new">25500 P.</span>
                 </li>
-                <li class="product__item">
+                <li class="product__item product__item--index">
                   <div class="product__overlay">
                     <a class="button button--product-buy">
                       <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
@@ -335,10 +335,11 @@
                 <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
               </div>
               <div class="contacts__map">
-                <span class="visually-hidden">Адрес магазина: г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                <iframe class="contacts__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651638!2d30.32089461602683!3d59.93879418187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1529918709515" width="300" height="158" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <a class="contacts__link" href="#">
+                  <img class="contacts__image" width="300" height="158" src="img/map.png" alt="Адрес магазина: г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                </a>
               </div>
-              <a class="button button--red" href="#">Заблудились? Напишите нам!</a>
+              <a class="button button--red button--letter" href="#">Заблудились? Напишите нам!</a>
             </section>
           </div>
         </div>
@@ -429,34 +430,33 @@
     </footer>
     <div class="modal modal--letter">
       <button class="modal__button-close modal__button-close--form" type="button"><span class="visually-hidden">Закрыть форму</span><span class="visually-hidden">x</span></button>
-      <div class="modal__block">
-          <form class="form" action="#" method="post">
-            <div class="form__wrapper">
-              <div class="form__name">
-                <label class="form__title" for="name">Ваше имя:</label>
-                <input class="form__field form__field--name" id="name" type="text" name="name" placeholder="Имя Фамилия">
-              </div>
-              <div class="form__email">
-                <label class="form__title" for="email">Ваш e-mail:</label>
-                <input class="form__field form__field--email" id="email" type="text" name="email" placeholder="email@example.com">
-              </div>
+      <form class="form form--modal" action="#" method="post">
+        <div class="form__block form__block--top">
+          <div class="form__wrapper">
+            <div class="form__name">
+              <label class="form__title" for="login">Ваше имя:</label>
+              <input class="form__field form__field--name" id="login" type="text" name="login" placeholder="Имя Фамилия">
             </div>
-            <div class="form__text">
-              <label class="form__title" for="text">Текст письма:</label>
-              <input class="form__field form__field--text" id="text" type="text" name="text" placeholder="В свободной форме">
+            <div class="form__email">
+              <label class="form__title" for="email">Ваш e-mail:</label>
+              <input class="form__field form__field--email" id="email" type="text" name="email" placeholder="email@example.com">
             </div>
-          </form>
-      </div>
-      <div class="modal__block modal__block--bottom">
-        <input class="button button--red button--submit" type="submit" value="Отправить">
-      </div>
+          </div>
+          <div class="form__text">
+            <label class="form__title" for="text">Текст письма:</label>
+            <input class="form__field form__field--text" id="text" type="text" name="text" placeholder="В свободной форме">
+          </div>
+        </div>
+        <div class="form__block form__block--bottom">
+          <input class="button button--red button--submit" type="submit" value="Отправить">
+        </div>
+      </form>
     </div>
     <div class="modal modal--map">
       <button class="modal__button-close modal__button-close--map" type="button"><span class="visually-hidden">Закрыть карту</span><span class="visually-hidden">x</span></button>
       <img src="img/map-popup.png" width="942" height="447" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
       <span class="visually-hidden">Карта расположения магазина</span>
     </div>
-    <script>
-    </script>
+    <script src="js/popup.js"></script>
   </body>
 </html>

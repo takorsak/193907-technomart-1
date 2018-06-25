@@ -684,9 +684,9 @@ body {
           box-shadow: 0 0 25px 3px rgba(29, 39, 57, 0.3);
   margin: 0 auto;
   position: fixed;
-  top: 100px;
-  left: 19%;
-  z-index: 2;
+  top: 20px;
+  left: 18%;
+  z-index: 3;
 }
 .modal__button-close--map {
   position: absolute;
@@ -697,11 +697,6 @@ body {
   position: absolute;
   left: 590px;
   top: 6px;
-}
-.modal--letter .modal__block {
-  padding: 80px;
-  padding-top: 46px;
-  padding-bottom: 17px;
 }
 .modal--letter {
   background-color: #ffffff;
@@ -714,7 +709,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
-  top: 100px;
+  top: 20px;
   left: 30%;
   z-index: 2;
 }
@@ -812,14 +807,6 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.modal--letter .modal__block--bottom {
-  padding: 0;
-  margin: 0;
-  background-color: #f4f4f4;
-  padding: 80px;
-  padding-top: 38px;
-  padding-bottom: 38px;
-}
 .modal--cart {
   margin: 0 auto;
   width: 620px;
@@ -831,10 +818,10 @@ body {
   background-position: 80px 48px;
   background-repeat: no-repeat;
   position: fixed;
-  top: 100px;
+  top: 20px;
   background-color: #ffffff;
   left: 30%;
-  z-index: 2;
+  z-index: 3;
 }
 .modal--cart .modal__block {
   padding-top: 65px;
@@ -1046,6 +1033,7 @@ body {
   fill: rgba(255, 255, 255, 0.3);
 }
 .button--submit {
+  font-family: "Cuprum", "Arial", sans-serif;
   border: none;
   width: 460px;
 }
@@ -1475,9 +1463,9 @@ body {
 }
 .contacts__map {
   margin-bottom: 38px;
-  background-image: url("../img/map.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+}
+.contacts__image {
+  background-color: #f4f2ed;
 }
 .contacts .button--red {
   display: block;
@@ -1988,6 +1976,24 @@ body {
 }
 .form__item--battery {
   margin-bottom: 15px;
+}
+.form--modal {
+  width: 100%;
+}
+.form__block--top {
+  padding: 80px;
+  padding-top: 46px;
+  padding-bottom: 17px;
+}
+.form__block--bottom {
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  padding: 80px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .sorting {
   font-family: "PT Sans", Arial, sans-serif;
