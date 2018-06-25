@@ -1,6 +1,10 @@
 .modal {
   font-size: 18px;
-  /*position: fixed;*/
+  display: none;
+}
+
+.modal--show {
+  display: block;
 }
 
 .modal__button-close {
@@ -25,6 +29,10 @@
   position: relative;
   box-shadow: 0 0 25px 3px rgba(29, 39, 57, 0.3);
   margin: 0 auto;
+  position: fixed;
+  top: 100px;
+  left: 19%;
+  z-index: 2;
 }
 
 .modal__button-close--map {
@@ -46,12 +54,17 @@
 }
 
 .modal--letter {
+  background-color: #ffffff;
   width: 620px;
   box-shadow: 0 0 25px 3px rgba(29, 39, 57, 0.3);
   position: relative;
   margin: 0 auto;
   border-top: 8px solid @danger;
   box-sizing: border-box;
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  z-index: 2;
 }
 
 .modal--letter .form__title {
@@ -146,6 +159,11 @@
   background-image: url(../img/modal-green.png);
   background-position: 80px 48px;
   background-repeat: no-repeat;
+  position: fixed;
+  top: 100px;
+  background-color: #ffffff;
+  left: 30%;
+  z-index: 2;
 }
 
 .modal--cart .modal__block {
