@@ -3,6 +3,10 @@
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 285px;
+  margin-left: 240px;
+  margin-top: 31px;
+  margin-bottom: 60px;
 }
 
 .pagination__item a {
@@ -10,7 +14,35 @@
   color: @dark;
 }
 
+.pagination__item {
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
 .pagination__list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination__item--current {
+  color: @light;
+  background-color: @danger;
+  border: none;
+}
+
+.pagination__item--current a {
+  color: @light;
+}
+
+.pagination__item--next {
+  width: 170px;
+  text-align: center;
+  margin: 0;
 }

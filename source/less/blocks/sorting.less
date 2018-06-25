@@ -20,7 +20,15 @@
   text-decoration-style: dotted;
 }
 
-.sorting__item .sorting__current {
+.sorting__item:hover a {
+  color: #000000;
+  text-decoration-color: @danger;
+  text-decoration-style: solid;
+}
+
+.sorting__item:active a,
+.sorting__item--current a,
+.sorting__item--current:hover a {
   color: @danger;
   text-decoration: none;
 }
@@ -72,6 +80,11 @@
   fill: rgba(0, 0, 0, 0.3);
 }
 
+.sorting__image:hover {
+  fill: #000000;
+}
+
+.sorting__image:active,
 .sorting__current .sorting__image {
   fill: #ee3643;
 }

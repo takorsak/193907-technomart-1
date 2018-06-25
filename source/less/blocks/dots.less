@@ -2,7 +2,21 @@
   list-style: none;
 }
 
-.dots__button {
+.dots__item:nth-child(1) .dots__button {
+  border: none;
+  position: absolute;
+  top: 220px;
+  left: 295px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url(../img/dot.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.dots__item:nth-child(2) .dots__button {
   border: none;
   position: absolute;
   top: 220px;
@@ -16,10 +30,11 @@
   background-repeat: no-repeat;
 }
 
-.dots__button--current {
+.dots__button:disabled::after {
+  content: "";
   position: absolute;
-  top: 220px;
-  left: 295px;
+  top: 0;
+  left: 0;
   width: 10px;
   height: 10px;
   border-radius: 50%;

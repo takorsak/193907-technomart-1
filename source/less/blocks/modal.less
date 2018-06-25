@@ -1,8 +1,14 @@
 .modal {
   font-size: 18px;
+  /*position: fixed;*/
 }
 
 .modal__button-close {
+  text-decoration: none;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background-color: rgba(255, 255, 255, 0);
   background-image: url(../img/icon-close.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -11,4 +17,170 @@
 .modal__text {
   font-size: 30px;
   line-height: 30px;
+}
+
+.modal--map {
+  width: 940px;
+  height: 446px;
+  position: relative;
+  box-shadow: 0 0 25px 3px rgba(29, 39, 57, 0.3);
+  margin: 0 auto;
+}
+
+.modal__button-close--map {
+  position: absolute;
+  left: 910px;
+  top: 8px;
+}
+
+.modal__button-close--form {
+  position: absolute;
+  left: 590px;
+  top: 6px;
+}
+
+.modal--letter .modal__block {
+  padding: 80px;
+  padding-top: 46px;
+  padding-bottom: 17px;
+}
+
+.modal--letter {
+  width: 620px;
+  box-shadow: 0 0 25px 3px rgba(29, 39, 57, 0.3);
+  position: relative;
+  margin: 0 auto;
+  border-top: 8px solid @danger;
+  box-sizing: border-box;
+}
+
+.modal--letter .form__title {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.modal--letter .form__field--name,
+.modal--letter .form__field--email,
+.modal--letter .form__field--text {
+  width: 220px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  margin-bottom: 21px;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  outline: none;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.modal--letter .form__title {
+  display: block;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.modal--letter .form__field--text {
+  width: 460px;
+  padding-bottom: 87px;
+  box-sizing: border-box;
+}
+
+.modal--letter .form__field--name {
+  margin-right: 20px;
+}
+
+.form__field--name::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.form__field--name::-moz-placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.form__field--email::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.form__field--email::-moz-placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.form__field--text::placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.form__field--text::-moz-placeholder {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.modal--letter .form__wrapper {
+  display: flex;
+}
+
+.modal--letter .modal__block--bottom {
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  padding: 80px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+
+.modal--cart {
+  margin: 0 auto;
+  width: 620px;
+  border-top: 8px solid @danger;
+  box-shadow: 0 0 25px 3px rgba(29, 39, 57, 0.3);
+  position: relative;
+  background-image: url(../img/modal-green.png);
+  background-position: 80px 48px;
+  background-repeat: no-repeat;
+}
+
+.modal--cart .modal__block {
+  padding-top: 65px;
+  padding-left: 180px;
+  padding-right: 80px;
+}
+
+.modal--cart .modal__block--bottom {
+  background-color: #f1f1f1;
+  padding: 0;
+  margin: 0;
+}
+
+.modal--cart .modal__bundle {
+  display: flex;
+  padding: 80px;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+
+.modal--cart .modal__text {
+  display: block;
+  margin-bottom: 68px;
+}
+
+.modal--cart .button--red,
+.modal--cart .button--white {
+  width: 220px;
+}
+
+.modal--cart .button--red {
+  margin-right: 20px;
+}
+
+.modal--cart .button--white {
+  background-color: #ffffff;
 }

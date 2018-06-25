@@ -11,7 +11,7 @@
       <div class="page-header__wrapper page-header__wrapper--top page-header__wrapper--inner">
         <div class="page-header__middle-wrapper">
           <div class="page-header__content-wrapper">
-            <a class="logo logo--header" href="#" area-label="Логотип"><span class="logo__text">Техномарт</span></a>
+            <a class="logo logo--header" href="index.html" area-label="Логотип"><span class="logo__text">Техномарт</span></a>
             <form class="search" action="#" method="get">
               <input class="search__field" type="text" name="search" placeholder="Поиск:">
               <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
@@ -20,7 +20,7 @@
               <svg class="button__image button__image--header" width="14" height="16"><use xlink:href="img/sprite.svg#sprite-icon-bookmark"></use></svg>
               <a class="button__link button__link--header">Закладки: 0</a>
             </div>
-            <div class="button button--header button--cart button--full-cart">
+            <div class="button button--header button--cart button--full">
               <svg class="button__image button__image--header" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
               <a class="button__link button__link--header">Корзина: 10</a>
             </div>
@@ -42,11 +42,11 @@
               </div>
               <div class="user-nav user-nav--inner">
                 <div class="user-nav__profile">
-                  <a class="user-nav__person-icon" href="#"><span class="visually-hidden">Профиль пользователя</span>
+                  <a class="user-nav__person-icon" href="profile.html"><span class="visually-hidden">Профиль пользователя</span>
                     <svg class="user-nav__image user-nav__image--user" width="20" height="18"><use xlink:href="img/sprite.svg#sprite-icon-user"></use></svg>
                   </a>
-                  <a class="user-nav__name" href="#"><span class="visually-hidden">Личный кабинет пользователя</span>Равшан Джамшутович</a>
-                  <a class="user-nav__logout-icon" href="#"><span class="visually-hidden">Выход из личного кабинета</span>
+                  <a class="user-nav__name" href="profile.html"><span class="visually-hidden">Личный кабинет пользователя</span>Равшан Джамшутович</a>
+                  <a class="user-nav__logout-icon" href="logout.html"><span class="visually-hidden">Выход из личного кабинета</span>
                     <svg class="user-nav__image user-nav__image--logout" width="21" height="17"><use xlink:href="img/sprite.svg#sprite-icon-logout"></use></svg>
                   </a>
                 </div>
@@ -59,13 +59,13 @@
             <nav class="main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link main-nav__link--home">Главная</a>
+                  <a class="main-nav__link main-nav__link--home" href="index.html">Главная</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Компания</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="catalog.html">Каталог</a>
+                  <a class="main-nav__link">Каталог</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Новости</a>
@@ -144,7 +144,7 @@
                     <fieldset class="form__group form__group--charge">
                       <legend class="form__title form__title--charge">Питание:</legend>
                       <ul class="form__list">
-                        <li class="form__item">
+                        <li class="form__item form__item--battery">
                           <input class="form__radio visually-hidden" id="battery" type="radio" name="charge" value="battery" checked>
                           <label class="form__radio-title" for="battery">Аккумуляторные</label>
                         </li>
@@ -161,8 +161,8 @@
                   <div class="sorting">
                     <span class="sorting__title">Сортировка:</span>
                     <ul class="sorting__list sorting__list--type">
-                      <li class="sorting__item">
-                        <a class="sorting__price sorting__current" href="#">По цене</a>
+                      <li class="sorting__item sorting__item--current">
+                        <a class="sorting__price" href="#">По цене</a>
                       </li>
                       <li class="sorting__item">
                         <a class="sorting__type" href="#">По типу</a>
@@ -194,7 +194,7 @@
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+                          <img class="product__image product__image--3000" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
                         <span class="product__price product__price--old">22500 Р.</span>
@@ -207,20 +207,20 @@
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
+                          <img class="product__image product__image--6000" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
                         <span class="product__price product__price--old">30500 Р.</span>
                         <span class="product__price product__price--new">25500 P.</span>
                         <svg class="product__button-red" width="141" height="38"><use xlink:href="img/sprite.svg#sprite-red-button"></use></svg>
                       </li>
-                      <li class="product__item product__flag">
+                      <li class="product__item product__item--new product__item--flag">
                         <div class="product__overlay">
                           <a class="button button--product-buy">Купить</a>
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+                          <img class="product__image product__image--2000" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
                         <span class="product__price product__price--new">12500 P.</span>
@@ -232,45 +232,45 @@
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+                          <img class="product__image product__image--3000" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
                         <span class="product__price product__price--old">22500 Р.</span>
                         <span class="product__price product__price--new">15500 P.</span>
                         <svg class="product__button-red" width="141" height="38"><use xlink:href="img/sprite.svg#sprite-red-button"></use></svg>
                       </li>
-                      <li class="product__item product__flag">
+                      <li class="product__item product__item--flag">
                         <div class="product__overlay">
                           <a class="button button--product-buy">Купить</a>
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
+                          <img class="product__image product__image--6000" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
                         <span class="product__price product__price--old">30500 Р.</span>
                         <span class="product__price product__price--new">25500 P.</span>
                         <svg class="product__button-red" width="141" height="38"><use xlink:href="img/sprite.svg#sprite-red-button"></use></svg>
                       </li>
-                      <li class="product__item">
+                      <li class="product__item product__item--new">
                         <div class="product__overlay">
                           <a class="button button--product-buy">Купить</a>
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+                          <img class="product__image product__image--2000" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
                         <span class="product__price product__price--new">12500 P.</span>
                         <svg class="product__button-red" width="141" height="38"><use xlink:href="img/sprite.svg#sprite-red-button"></use></svg>
                       </li>
-                      <li class="product__item product__flag">
+                      <li class="product__item product__item--flag">
                         <div class="product__overlay">
                           <a class="button button--product-buy">Купить</a>
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
+                          <img class="product__image product__image--3000" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 3000</h3>
                         <span class="product__price product__price--old">22500 Р.</span>
@@ -283,20 +283,20 @@
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
+                          <img class="product__image product__image--6000" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 6000</h3>
                         <span class="product__price product__price--old">30500 Р.</span>
                         <span class="product__price product__price--new">25500 P.</span>
                         <svg class="product__button-red" width="141" height="38"><use xlink:href="img/sprite.svg#sprite-red-button"></use></svg>
                       </li>
-                      <li class="product__item">
+                      <li class="product__item product__item--new">
                         <div class="product__overlay">
                           <a class="button button--product-buy">Купить</a>
                           <a class="button button--product-bookmarks">В закладки</a>
                         </div>
                         <p>
-                          <img class="product__image" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
+                          <img class="product__image product__image--2000" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
                         </p>
                         <h3 class="product__title">Перфоратор BOSCH BFG 2000</h3>
                         <span class="product__price product__price--new">12500 P.</span>
@@ -308,8 +308,8 @@
               </div>
               <div class="pagination">
                 <ul class="pagination__list">
-                  <li class="pagination__item">
-                    <a class="pagination__current">1</a>
+                  <li class="pagination__item pagination__item--current">
+                    <a>1</a>
                   </li>
                   <li class="pagination__item">
                     <a href="#">2</a>
@@ -317,9 +317,9 @@
                   <li class="pagination__item">
                     <a href="#">3</a>
                   </li>
-                  <li class="pagination__item">
+                  <li class="pagination__item pagination__item--next">
                     <a href="#">
-                      <span class="pagination__next">Следующая</span>
+                      <span>Следующая</span>
                     </a>
                   </li>
                 </ul>
@@ -342,7 +342,7 @@
         <div class="page-footer__middle-wrapper">
           <div class="page-footer__content-wrapper">
             <div class="page-footer__half">
-              <a class="logo logo--footer" href="#"><span class="logo__text">Техномарт</span></a>
+              <a class="logo logo--footer" href="index.html"><span class="logo__text">Техномарт</span></a>
               <p class="page-footer__contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
             </div>
             <div class="page-footer__half page-footer__half--second">
@@ -414,21 +414,21 @@
             </div>
             <div class="page-footer__developer">
               <p class="page-footer__text">Разработано —</p>
-              <a class="page-footer__email">htmlacademy.ru</a>
+              <a class="page-footer__email" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <div class="modal visually-hidden">
+    <div class="modal modal--cart">
       <div class="modal__block">
-        <button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть форму</span>x</button>
+        <button class="modal__button-close modal__button-close--form" type="button"><span class="visually-hidden">Закрыть форму</span><span class="visually-hidden">x</span></button>
         <span class="modal__text">Товар добавлен в корзину!</span>
       </div>
       <div class="modal__block modal__block--bottom">
         <div class="modal__bundle">
           <div class="button button--red">Оформить заказ</div>
-          <div class="button">Продолжить покупки</div>
+          <div class="button button--white">Продолжить покупки</div>
         </div>
       </div>
     </div>

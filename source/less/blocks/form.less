@@ -78,6 +78,7 @@
   left: 20px;
   background-image: url("../img/filter-round-button.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .form__prise--min::after {
@@ -89,6 +90,7 @@
   left: 160px;
   background-image: url("../img/filter-round-button.png");
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .form__prise--max::after {
@@ -116,6 +118,7 @@
 }
 
 .form__title--producer {
+  font-weight: 700;
   margin: 0;
   padding: 0;
   padding-top: 50px;
@@ -166,8 +169,24 @@
   background-repeat: no-repeat;
 }
 
+.form__checkbox-title:hover::before {
+  background-image: url("../img/checkbox-off-hover.svg");
+}
+
+.form__checkbox-title:active::before {
+  background-image: url("../img/checkbox-off-active.svg");
+}
+
 .form__checkbox:checked + .form__checkbox-title::before {
   background-image: url("../img/checkbox-on.svg");
+}
+
+.form__checkbox:checked:hover + .form__checkbox-title::before {
+  background-image: url("../img/checkbox-on-hover.svg");
+}
+
+.form__checkbox:checked:active + .form__checkbox-title::before {
+  background-image: url("../img/checkbox-on-active.svg");
 }
 
 .form__group--charge {
@@ -175,9 +194,10 @@
 }
 
 .form__title--charge {
+  font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+  padding-top: 26px;
   position: relative;
   margin-bottom: 20px;
 }
@@ -189,10 +209,12 @@
 }
 
 .form__group--charge .form__item:nth-child(1) {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .form__radio-title {
+  font-size: 15px;
+  line-height: 20px;
   position: relative;
 }
 
@@ -210,10 +232,30 @@
   background-repeat: no-repeat;
 }
 
+.form__radio-title:hover::before {
+  background-image: url("../img/radio-off-hover.svg");
+}
+
+.form__radio-title:active::before {
+  background-image: url("../img/radio-off-active.svg");
+}
+
 .form__radio:checked + .form__radio-title::before {
   background-image: url("../img/radio-on.svg");
 }
 
+.form__radio:checked:hover + .form__radio-title::before {
+  background-image: url("../img/radio-on-hover.svg");
+}
+
+.form__radio:checked:active + .form__radio-title::before {
+  background-image: url("../img/radio-on-active.svg");
+}
+
 .form__button {
   width: 140px;
+}
+
+.form__item--battery {
+  margin-bottom: 15px;
 }
