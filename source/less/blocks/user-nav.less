@@ -13,9 +13,10 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-left: 68px;
+  padding-left: 70px;
   padding-top: 47px;
   padding-bottom: 66px;
+  box-sizing: border-box;
 }
 
 .user-nav__list--inner {
@@ -58,27 +59,43 @@
 
 .user-nav__item {
   background-color: #ffffff;
-  text-align: center;
-  padding-left: 15px;
-  padding-top: 12px;
-  padding-bottom: 13px;
+  margin: 0;
+  padding: 0;
 }
 
 .user-nav__item:nth-child(1) {
   margin-right: 10px;
-  padding-right: 25px;
 }
 
-.user-nav__item:nth-child(2) {
-  padding-left: 25px;
-  padding-right: 23px;
+.user-nav__item:nth-child(1) .user-nav__link {
+  width: 121px;
 }
 
-.user-nav__item:hover .user-nav__link {
+.user-nav__item:nth-child(2) .user-nav__link {
+  width: 150px;
+  padding-top: 11px;
+  padding-left: 24px;
+}
+
+.user-nav__link {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 21px;
+  color: @dark;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+}
+
+.user-nav__link:hover,
+.user-nav__link:focus {
   color: #ee3643;
 }
 
-.user-nav__item:hover .user-nav__image--login {
+.user-nav__link:hover .user-nav__image--login,
+.user-nav__link:focus .user-nav__image--login {
   fill: #32425c;
 }
 
@@ -91,15 +108,9 @@
 }
 
 .user-nav__image--login {
-  margin-right: 10px;
+  margin-right: 8px;
+  margin-top: 1px;
   fill: #c5c5c5;
-}
-
-.user-nav__link {
-  text-decoration: none;
-  font-size: 21px;
-  line-height: 21px;
-  color: @dark;
 }
 
 .user-nav__name {
@@ -109,6 +120,15 @@
   text-decoration: none;
 }
 
+.user-nav__name:hover,
+.user-nav__name:focus {
+  color: @dark;
+}
+
+.user-nav__name:active {
+  color: #c5c5c5;
+}
+
 .user-nav__person-icon {
   text-decoration: none;
 }
@@ -116,6 +136,16 @@
 .user-nav__image--user {
   margin-right: 8px;
   margin-top: 2px;
+  fill: #c5c5c5;
+}
+
+.user-nav__person-icon:hover .user-nav__image--user,
+.user-nav__person-icon:focus .user-nav__image--user {
+  fill: #32425c;
+}
+
+.user-nav__image--user:active {
+  fill: #c5c5c5;
 }
 
 .user-nav__list--inner a {
@@ -123,7 +153,26 @@
   color: #32425c;
 }
 
+.user-nav__list--inner a:hover,
+.user-nav__list--inner a:focus {
+  color: @danger;
+}
+
+.user-nav__list--inner a:active {
+  color: #c5c5c5;
+}
+
 .user-nav__image--logout {
   margin-left: 32px;
   padding-top: 5px;
+  fill: #c5c5c5;
+}
+
+.user-nav__logout-icon:hover .user-nav__image--logout,
+.user-nav__logout-icon:focus .user-nav__image--logout {
+  fill: #32425c;
+}
+
+.user-nav__image--logout:active {
+  fill: #c5c5c5;
 }

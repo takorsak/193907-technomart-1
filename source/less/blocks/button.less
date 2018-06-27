@@ -13,12 +13,17 @@
   color: @light;
 }
 
-.button--red:hover {
+.button--red:hover,
+.button--red:focus {
   background-color: #ca2c37;
 }
 
 .button--red:active {
   background-color: #ba2732;
+}
+
+.button--header {
+  padding: 0;
 }
 
 .button--header {
@@ -29,6 +34,7 @@
   padding-bottom: 12px;
   text-align: center;
   text-transform: none;
+  box-sizing: border-box;
 }
 
 .page-header__wrapper--inner .button--header {
@@ -42,15 +48,22 @@
   border-radius: 0;
 }
 
+.page-header__wrapper--inner .button--full:hover,
+.page-header__wrapper--inner .button--full:focus {
+  background-color: #ee3643;
+}
+
 .page-header__wrapper--inner .button--order {
   padding-top: 13px;
 }
 
-.button--header:hover {
+.button--header:hover,
+.button--header:focus {
   background-color: #212a3a;
 }
 
-.button--header:hover .button__image--header {
+.button--header:hover .button__image--header,
+.button--header:focus .button__image--header {
   fill: #ffffff;
 }
 
@@ -70,11 +83,13 @@
   margin-bottom: 8px;
 }
 
-.button--product-buy:hover {
+.button--product-buy:hover,
+.button--product-buy:focus {
   background-color: #5fbb2d;
 }
 
-.button--product-buy:hover .button__image--cart {
+.button--product-buy:hover .button__image--cart,
+.button--product-buy:focus .button__image--cart {
   fill: #ffffff;
 }
 
@@ -85,10 +100,11 @@
 
 .button--product-buy,
 .button--product-bookmarks {
-  width: 135px;
+  width: 134px;
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-bottom: 8px;
+  padding-top: 11px;
+  padding-bottom: 7px;
+  padding-left: 5px;
 }
 
 .button--product-bookmarks {
@@ -97,7 +113,8 @@
   padding-top: 6px;
 }
 
-.button--product-bookmarks:hover {
+.button--product-bookmarks:hover,
+.button--product-bookmarks:focus {
   border: 3px solid #32425c;
 }
 
@@ -134,7 +151,8 @@
   border-radius: 0;
 }
 
-.button--order:hover {
+.button--order:hover,
+.button--order:focus {
   background-color: #5fbb2d;
 }
 
@@ -154,4 +172,9 @@
   font-family: "Cuprum", "Arial", sans-serif;
   border: none;
   width: 460px;
+}
+
+.button__link--header {
+  text-decoration: none;
+  color: #ffffff;
 }

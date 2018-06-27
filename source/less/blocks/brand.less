@@ -1,8 +1,10 @@
-.brand {
-  border: 1px solid #ebebeb;
+.brand__item {
+  margin: 0;
+  padding: 0;
 }
 
-.brand__item {
+.brand__link {
+  display: block;
   width: 220px;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -11,50 +13,61 @@
   margin-right: 20px;
   padding-bottom: 28px;
   padding-right: 13px;
+  border: 1px solid #ebebeb;
 }
 
-.brand__item:hover {
+.brand__link:hover,
+.brand__link:focus {
   box-shadow: 0 10px 25px 3px rgba(29, 39, 57, 0.3);
 }
 
-.brand__item:active {
+.brand__link:active {
   box-shadow: 0 5px 10px 1px rgba(29, 39, 57, 0.3);
 }
 
-.brand__item:active .brand__image {
+.brand__link:active .brand__image {
   opacity: 0.3;
 }
 
-.brand__item:nth-child(4n) {
+.brand__item:nth-child(4n) .brand__link {
   margin-right: 0;
 }
 
-.brand__item--makita {
-  padding-top: 26px;
-  padding-left: 13px;
+.brand__item--makita .brand__link {
+  padding-top: 28px;
+  padding-left: 14px;
+  padding-bottom: 30px;
 }
 
-.brand__item--dewalt {
-  padding-top: 27px;
+.brand__item--dewalt .brand__link {
+  padding-top: 28px;
   padding-left: 15px;
+  padding-bottom: 30px;
 }
 
-.brand__item--interskol {
-  padding-top: 22px;
-  padding-left: 13px;
+.brand__item--interskol .brand__link {
+  padding-top: 24px;
+  padding-left: 14px;
+  padding-bottom: 34px;
 }
 
-.brand__item--hitachi {
-  padding-top: 32px;
+.brand__item--hitachi .brand__link {
+  padding-top: 33px;
   padding-left: 17px;
 }
 
-.brand__item--lg {
+.brand__item--lg .brand__link {
+  padding-top: 32px;
   padding-left: 13px;
 }
 
-.brand__item--metabo {
-  padding-top: 25px;
+.brand__item--aeg .brand__link {
+  padding-bottom: 31px;
+}
+
+.brand__item--metabo .brand__link {
+  padding-top: 28px;
+  padding-bottom: 33px;
 }
 
 .brand__image {

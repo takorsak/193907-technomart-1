@@ -27,6 +27,7 @@ letter.addEventListener("click", function (evt) {
 closeletter.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupletter.classList.remove("modal--show");
+  popupletter.classList.remove("modal--error");
 });
 
 link.addEventListener("click", function (evt) {
@@ -47,7 +48,7 @@ form.addEventListener("submit", function (evt) {
   console.log(text.value);
   if (!login.value || !email.value) {
     evt.preventDefault();
-    console.log("Нужно ввести имя, email");
+    popupletter.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);

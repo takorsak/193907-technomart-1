@@ -32,7 +32,8 @@
   z-index: 1;
 }
 
-.services__button:hover {
+.services__button:hover,
+.services__button:focus {
   background-color: #293449;
 }
 
@@ -87,7 +88,7 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .services__text {
@@ -118,7 +119,8 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 2px;
+  margin-top: 3px;
+  margin-left: 1px;
   margin-bottom: 24px;
 }
 
@@ -143,13 +145,18 @@
 }
 
 .services__item--guarantee-button .services__button {
+  padding-top: 14px;
+  padding-left: 23px;
+}
+
+.services__item--credit-button .services__button  {
   padding-top: 12px;
-  padding-left: 22px;
+  padding-bottom: 16px;
 }
 
 .services__item--credit .services__button {
-  padding-top: 13px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
 
 .services__item--current .services__button {
@@ -167,5 +174,5 @@
 }
 
 .services__list--buttons {
-  padding-top: 5px;
+  padding-top: 2px;
 }

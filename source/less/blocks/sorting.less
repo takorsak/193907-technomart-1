@@ -16,11 +16,19 @@
 
 .sorting__item a {
   color: rgba(0, 0, 0, 0.3);
-  text-decoration-color: @danger;
-  text-decoration-style: dotted;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px dotted @danger;
+  line-height: 14px;
+  margin-top: 2px;
 }
 
-.sorting__item:hover a {
+.sorting__item--icon a {
+  border: none;
+}
+
+.sorting__item:hover a,
+.sorting__item:focus a {
   color: #000000;
   text-decoration-color: @danger;
   text-decoration-style: solid;
@@ -28,9 +36,11 @@
 
 .sorting__item:active a,
 .sorting__item--current a,
-.sorting__item--current:hover a {
+.sorting__item--current:hover a,
+.sorting__item--current:focus a {
   color: @danger;
   text-decoration: none;
+  border: none;
 }
 
 .sorting__list--type {
@@ -49,6 +59,8 @@
 
 .sorting__item {
   padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .sorting__item:nth-child(1) {
@@ -79,7 +91,8 @@
   fill: rgba(0, 0, 0, 0.3);
 }
 
-.sorting__image:hover {
+.sorting__image:hover,
+.sorting__image:focus {
   fill: #000000;
 }
 

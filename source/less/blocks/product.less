@@ -8,6 +8,10 @@
   justify-content: space-between;
 }
 
+.product--index .product__item {
+  margin-top: 20px;
+}
+
 .product__list--inner {
   width: 700px;
 }
@@ -22,7 +26,8 @@
   position: relative;
 }
 
-.product__item:hover {
+.product__item:hover,
+.product__item:focus {
   box-shadow: 0 10px 25px 3px rgba(29, 39, 57, 0.3);
 }
 
@@ -93,7 +98,8 @@
   padding-top: 43px;
 }
 
-.product__item:hover .product__overlay {
+.product__item:hover .product__overlay,
+.product__item:focus .product__overlay {
   opacity: 1;
 }
 

@@ -10,7 +10,7 @@
   line-height: 17px;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 20px;
 }
 
@@ -37,11 +37,11 @@
 }
 
 .form__slider {
-  height: 80px;
+  height: 82px;
   width: 220px;
   background-color: #f7f3ec;
   position: relative;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .form__slider::after {
@@ -107,8 +107,8 @@
   background-color: #f7f3ec;
   display: block;
   width: 95px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8.5px;
+  padding-bottom: 12px;
   text-align: center;
 }
 
@@ -123,7 +123,7 @@
   padding: 0;
   padding-top: 50px;
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 10px;
 }
 
 .form__title--producer::before {
@@ -131,7 +131,7 @@
   position: absolute;
   width: 220px;
   height: 1.5px;
-  top: 27px;
+  top: 26px;
   left: 0;
   background-color: #e5e5e5;
 }
@@ -142,8 +142,9 @@
   margin-left: 34px;
 }
 
-.form__item {
-  margin-bottom: 20px;
+.form__item { /*убрать*/
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .form__checkbox,
@@ -153,20 +154,23 @@
 
 .form__checkbox-title {
   position: relative;
+  padding-top: 9px; /*убрать*/
+  padding-bottom: 8px; /*убрать*/
 }
 
 .form__checkbox-title::before {
   content: "";
 
   position: absolute;
-  top: -2px;
+  top: 9px;
   left: -34px;
 
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 28px;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .form__checkbox-title:hover::before {
@@ -190,14 +194,25 @@
 }
 
 .form__group--charge {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.form__group--charge::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 0.5px;
+  top: 13px;
+  left: 0;
+  background-color: #e5e5e5;
 }
 
 .form__title--charge {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-top: 26px;
+  padding-top: 38px;
   position: relative;
   margin-bottom: 20px;
 }
@@ -209,6 +224,7 @@
 }
 
 .form__group--charge .form__item:nth-child(1) {
+  padding: 0;
   margin-bottom: 20px;
 }
 
@@ -257,7 +273,14 @@
 }
 
 .form__item--battery {
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 15px;
+}
+
+.form__item--net {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .form--modal {

@@ -5,7 +5,6 @@
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer="" src="js/svgxuse.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -17,15 +16,15 @@
               <input class="search__field" type="text" name="search" placeholder="Поиск:">
               <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
             </form>
-            <div class="button button--header button--bookmarks">
+            <a class="button button--header button--bookmarks" href="bookmarks.html">
               <svg class="button__image button__image--header" width="14" height="16"><use xlink:href="img/sprite.svg#sprite-icon-bookmark"></use></svg>
-              <a class="button__link button__link--header">Закладки: 0</a>
-            </div>
-            <div class="button button--header button--cart button--full">
+              <span class="button__link button__link--header">Закладки: 0</span>
+            </a>
+            <a class="button button--header button--cart button--full" href="#">
               <svg class="button__image button__image--header" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
-              <a class="button__link button__link--header">Корзина: 10</a>
-            </div>
-            <a class="button button--header button--order">Оформить заказ</a>
+              <span class="button__link button__link--header">Корзина: 10</span>
+            </a>
+            <a class="button button--header button--order" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -66,7 +65,7 @@
                   <a class="main-nav__link" href="#">Компания</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link">Каталог</a>
+                  <a class="main-nav__link" href="#">Каталог</a>
                 </li>
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Новости</a>
@@ -99,7 +98,7 @@
               </li>
               <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
               <li class="bread-crumbs__item"><a href="#">Инструмент</a></li>
-              <li class="bread-crumbs__item"><a>Перфораторы</a></li>
+              <li class="bread-crumbs__item"><a href="#">Перфораторы</a></li>
             </ul>
             <section class="content content--inner">
               <h1 class="content__title">Перфораторы</h1>
@@ -149,7 +148,7 @@
                           <input class="form__radio visually-hidden" id="battery" type="radio" name="charge" value="battery" checked="">
                           <label class="form__radio-title" for="battery">Аккумуляторные</label>
                         </li>
-                        <li class="form__item">
+                        <li class="form__item form__item--net">
                           <input class="form__radio visually-hidden" id="net" type="radio" name="charge" value="net">
                           <label class="form__radio-title" for="net">Сетевые</label>
                         </li>
@@ -173,13 +172,13 @@
                       </li>
                     </ul>
                     <ul class="sorting__list sorting__list--order">
-                      <li class="sorting__item">
+                      <li class="sorting__item sorting__item--icon">
                         <a class="sorting__current" href="#">
                           <svg class="sorting__image sorting__image--up" width="11" height="10"><use xlink:href="img/sprite.svg#sprite-icon-up-dir"></use></svg>
                           <span class="visually-hidden">Сортировка от меньшего к большему</span>
                         </a>
                       </li>
-                      <li class="sorting__item">
+                      <li class="sorting__item sorting__item--icon">
                         <a href="#">
                           <svg class="sorting__image sorting__image--down" width="11" height="10"><use xlink:href="img/sprite.svg#sprite-icon-down-dir"></use></svg>
                           <span class="visually-hidden">Сортировка от большего к меньшему</span>
@@ -191,8 +190,11 @@
                     <ul class="product product__list product__list--inner">
                       <li class="product__item product__item--inner">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--3000" width="190" height="120" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
@@ -203,8 +205,11 @@
                       </li>
                       <li class="product__item product__item--inner">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--6000" width="190" height="120" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
@@ -215,8 +220,11 @@
                       </li>
                       <li class="product__item product__item--new product__item--flag">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--2000" width="190" height="120" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
@@ -226,8 +234,11 @@
                       </li>
                       <li class="product__item">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--3000" width="190" height="120" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
@@ -238,8 +249,11 @@
                       </li>
                       <li class="product__item product__item--flag">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--6000" width="190" height="120" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
@@ -250,8 +264,11 @@
                       </li>
                       <li class="product__item product__item--new">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--2000" width="190" height="120" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
@@ -261,8 +278,11 @@
                       </li>
                       <li class="product__item product__item--flag">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--3000" width="190" height="120" src="img/3000.jpg" alt="Перфоратор BOSCH BFG 3000">
@@ -273,8 +293,11 @@
                       </li>
                       <li class="product__item">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--6000" width="190" height="120" src="img/6000.jpg" alt="Перфоратор BOSCH BFG 6000">
@@ -285,8 +308,11 @@
                       </li>
                       <li class="product__item product__item--new">
                         <div class="product__overlay">
-                          <a class="button button--product-buy">Купить</a>
-                          <a class="button button--product-bookmarks">В закладки</a>
+                          <a class="button button--product-buy" href="cart.html">
+                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
+                            <span>Купить</span>
+                          </a>
+                          <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
                         </div>
                         <p>
                           <img class="product__image product__image--2000" width="190" height="120" src="img/2000.jpg" alt="Перфоратор BOSCH BFG 2000">
@@ -301,7 +327,7 @@
               <div class="pagination">
                 <ul class="pagination__list">
                   <li class="pagination__item pagination__item--current">
-                    <a>1</a>
+                    <a href="#">1</a>
                   </li>
                   <li class="pagination__item">
                     <a href="#">2</a>
@@ -402,7 +428,7 @@
             </ul>
             <div class="page-footer__mail-box">
               <p class="page-footer__text">Обратная связь:</p>
-              <a class="page-footer__email">mail@htmlacademy.ru</a>
+              <a class="page-footer__email" href="#">mail@htmlacademy.ru</a>
             </div>
             <div class="page-footer__developer">
               <p class="page-footer__text">Разработано —</p>
@@ -424,6 +450,8 @@
         </div>
       </div>
     </div>
+    <script src="js/svgxuse.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/catalog.min.js"></script>
   </body>
 </html>
