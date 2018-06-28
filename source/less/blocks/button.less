@@ -42,60 +42,24 @@
 }
 
 .page-header__wrapper--inner .button--full {
+  width: 150px;
   margin-top: 0;
-  padding-top: 13px;
+  padding-top: 10px;
   background-color: #ee3643;
   border-radius: 0;
-}
-
-.page-header__wrapper--inner .button--full:hover,
-.page-header__wrapper--inner .button--full:focus {
-  background-color: #ee3643;
+  background-image: url(../img/sprite-icon-cart-full.svg);
+  background-position: 18px 12px;
+  background-repeat: no-repeat;
 }
 
 .page-header__wrapper--inner .button--order {
-  padding-top: 13px;
+  padding-top: 11.5px;
+  padding-right: 3px;
 }
 
 .button--header:hover,
 .button--header:focus {
   background-color: #212a3a;
-}
-
-.button--header:hover .button__image--header,
-.button--header:focus .button__image--header {
-  fill: #ffffff;
-}
-
-.button--header:active {
-  background-color: #161d29;
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.button--header:active .button__image--header {
-  fill: rgba(255, 255, 255, 0.3);
-}
-
-.button--product-buy {
-  color: #ffffff;
-  background-color: #63a63e;
-  border-bottom: 3px solid #367315;
-  margin-bottom: 8px;
-}
-
-.button--product-buy:hover,
-.button--product-buy:focus {
-  background-color: #5fbb2d;
-}
-
-.button--product-buy:hover .button__image--cart,
-.button--product-buy:focus .button__image--cart {
-  fill: #ffffff;
-}
-
-.button--product-buy:active {
-  background-color: #518534;
-  border-bottom: 3px solid #518534;
 }
 
 .button--product-buy,
@@ -107,10 +71,38 @@
   padding-left: 5px;
 }
 
+.button--product-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+  border-bottom: 3px solid #367315;
+  margin-bottom: 8px;
+  background-image: url(../img/sprite-icon-cart-buy.svg);
+  background-position: 14px 10px;
+  background-repeat: no-repeat;
+  padding-top: 11px;
+}
+
+.button--product-buy span {
+  display: block;
+  box-sizing: border-box;
+}
+
+.button--product-buy:hover,
+.button--product-buy:focus {
+  background-color: #5fbb2d;
+  background-image: url(../img/sprite-icon-cart-buy-hover.svg);
+}
+
+.button--product-buy:active {
+  background-color: #518534;
+  border-bottom: 3px solid #518534;
+  background-image: url(../img/sprite-icon-cart-buy-hover.svg);
+}
+
 .button--product-bookmarks {
   color: #32425c;
   border: 3px solid #63a63e;
-  padding-top: 6px;
+  padding-top: 8px;
 }
 
 .button--product-bookmarks:hover,
@@ -124,25 +116,8 @@
 }
 
 .button__link--header,
-.button__image--header,
 .button--order {
   display: block;
-}
-
-.button--bookmarks,
-.button--cart {
-  display: flex;
-  margin-top: 2px;
-}
-
-.button--cart .button__image--header {
-  margin-right: 16px;
-}
-
-.button__image--header {
-  margin-left: 18px;
-  margin-right: 13px;
-  fill: rgba(255, 255, 255, 0.3);
 }
 
 .button--order {
@@ -161,20 +136,70 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button__image--cart {
-  position: absolute;
-  top: 54px;
-  left: 57px;
-  fill: rgba(255, 255, 255, 0.3);
-}
-
 .button--submit {
   font-family: "Cuprum", "Arial", sans-serif;
   border: none;
   width: 460px;
 }
 
+.button--bookmarks {
+  background-image: url(../img/sprite-icon-bookmark.svg);
+  background-position: 19px 12px;
+  background-repeat: no-repeat;
+}
+
+.button--bookmarks:hover,
+.button--bookmarks:focus {
+  background-image: url(../img/sprite-icon-bookmark-hover.svg);
+}
+
+.button--bookmarks:active {
+  background-image: url(../img/sprite-icon-bookmark.svg);
+  background-color: #161d29;
+}
+
+.button--cart {
+  background-image: url(../img/sprite-icon-cart.svg);
+  background-position: 19px 12px;
+  background-repeat: no-repeat;
+}
+
+.button--cart:hover,
+.button--cart:focus {
+  background-image: url(../img/sprite-icon-cart-hover.svg);
+}
+
+.button--cart:active {
+  background-image: url(../img/sprite-icon-cart.svg);
+  background-color: #161d29;
+}
+
 .button__link--header {
   text-decoration: none;
   color: #ffffff;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.button__link--cart {
+  margin-left: 24px;
+}
+
+.button--bookmarks:active .button__link--header,
+.button--cart:active .button__link--header {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-header__wrapper--inner .button--bookmarks {
+  padding-top: 10px;
+}
+
+.page-header__wrapper--inner .button--full:hover,
+.page-header__wrapper--inner .button--full:focus {
+  background-color: #ee3643;
+}
+
+.page-header__wrapper--inner .button--full:active {
+  background-color: #ee3643;
+  background-image: url(../img/sprite-icon-cart-full.svg);
 }

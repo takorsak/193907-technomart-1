@@ -24,7 +24,7 @@
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 9px;
+  margin-top: 7px;
   margin-left: 68px;
   margin-bottom: 41px;
   position: relative;
@@ -55,6 +55,12 @@
   padding-right: 10px;
   margin-top: 47px;
   margin-left: 51px;
+  display: flex;
+}
+
+.user-nav--inner .user-nav__profile {
+  padding-top: 11px;
+  padding-bottom: 10px;
 }
 
 .user-nav__item {
@@ -67,8 +73,25 @@
   margin-right: 10px;
 }
 
-.user-nav__item:nth-child(1) .user-nav__link {
+.user-nav__text {
+  margin-left: 32px;
+  margin-top: 3px;
+}
+
+.user-nav__link--login {
   width: 121px;
+  background-image: url(../img/sprite-icon-login.svg);
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+}
+
+.user-nav__link--login:hover,
+.user-nav__link--login:focus {
+  background-image: url(../img/sprite-icon-login-hover.svg);
+}
+
+.user-nav__link--login:active {
+  background-image: url(../img/sprite-icon-login.svg);
 }
 
 .user-nav__item:nth-child(2) .user-nav__link {
@@ -94,23 +117,8 @@
   color: #ee3643;
 }
 
-.user-nav__link:hover .user-nav__image--login,
-.user-nav__link:focus .user-nav__image--login {
-  fill: #32425c;
-}
-
 .user-nav__item:active .user-nav__link {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.user-nav__item:active .user-nav__image--login {
-  fill: #c5c5c5;
-}
-
-.user-nav__image--login {
-  margin-right: 8px;
-  margin-top: 1px;
-  fill: #c5c5c5;
 }
 
 .user-nav__name {
@@ -118,6 +126,12 @@
   line-height: 21px;
   color: @dark;
   text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  width: 200px;
+  margin-left: 32px;
+  margin-right: 22px;
+  padding-bottom: 2px;
 }
 
 .user-nav__name:hover,
@@ -131,21 +145,28 @@
 
 .user-nav__person-icon {
   text-decoration: none;
+  position: relative;
 }
 
-.user-nav__image--user {
-  margin-right: 8px;
-  margin-top: 2px;
-  fill: #c5c5c5;
+.user-nav__person-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 2px;
+  left: 0;
+  background-image: url(../img/sprite-icon-user.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
-.user-nav__person-icon:hover .user-nav__image--user,
-.user-nav__person-icon:focus .user-nav__image--user {
-  fill: #32425c;
+.user-nav__person-icon:hover::after,
+.user-nav__person-icon:focus::after {
+  background-image: url(../img/sprite-icon-user-hover.svg);
 }
 
-.user-nav__image--user:active {
-  fill: #c5c5c5;
+.user-nav__person-icon:active::after {
+  background-image: url(../img/sprite-icon-user.svg);
 }
 
 .user-nav__list--inner a {
@@ -162,17 +183,27 @@
   color: #c5c5c5;
 }
 
-.user-nav__image--logout {
-  margin-left: 32px;
-  padding-top: 5px;
-  fill: #c5c5c5;
+.user-nav__logout-icon {
+  position: relative;
 }
 
-.user-nav__logout-icon:hover .user-nav__image--logout,
-.user-nav__logout-icon:focus .user-nav__image--logout {
-  fill: #32425c;
+.user-nav__logout-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 2px;
+  left: 0;
+  background-image: url(../img/sprite-icon-logout.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
-.user-nav__image--logout:active {
-  fill: #c5c5c5;
+.user-nav__logout-icon:hover::after,
+.user-nav__logout-icon:focus::after {
+  background-image: url(../img/sprite-icon-logout-hover.svg);
+}
+
+.user-nav__logout-icon:active::after {
+  background-image: url(../img/sprite-icon-logout.svg);
 }

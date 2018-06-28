@@ -7,22 +7,19 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--inner">
       <div class="page-header__wrapper page-header__wrapper--top page-header__wrapper--inner">
         <div class="page-header__middle-wrapper">
           <div class="page-header__content-wrapper">
             <a class="logo logo--header" href="index.html"><span class="visually-hidden">Логотип</span><span class="logo__text">Техномарт</span></a>
             <form class="search" action="#" method="get">
               <input class="search__field" type="text" name="search" placeholder="Поиск:">
-              <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
             </form>
             <a class="button button--header button--bookmarks" href="bookmarks.html">
-              <svg class="button__image button__image--header" width="14" height="16"><use xlink:href="img/sprite.svg#sprite-icon-bookmark"></use></svg>
               <span class="button__link button__link--header">Закладки: 0</span>
             </a>
-            <a class="button button--header button--cart button--full" href="#">
-              <svg class="button__image button__image--header" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
-              <span class="button__link button__link--header">Корзина: 10</span>
+            <a class="button button--header button--cart button--full" href="cart.html">
+              <span class="button__link button__link--header button__link--cart">Корзина: 10</span>
             </a>
             <a class="button button--header button--order" href="#">Оформить заказ</a>
           </div>
@@ -35,7 +32,6 @@
               <p class="header-info__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
               <div class="header-contacts">
                 <div class="header-contacts__phone">
-                  <svg class="header-contacts__image" width="19" height="19"><use xlink:href="img/sprite.svg#sprite-icon-phone"></use></svg>
                   <a class="header-contacts__number" href="tel:+78125550555"><span class="visually-hidden">Номер телефона</span>+7 (812) 555-05-55</a>
                 </div>
                 <div class="header-contacts__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
@@ -43,11 +39,9 @@
               <div class="user-nav user-nav--inner">
                 <div class="user-nav__profile">
                   <a class="user-nav__person-icon" href="profile.html"><span class="visually-hidden">Профиль пользователя</span>
-                    <svg class="user-nav__image user-nav__image--user" width="20" height="18"><use xlink:href="img/sprite.svg#sprite-icon-user"></use></svg>
                   </a>
                   <a class="user-nav__name" href="profile.html"><span class="visually-hidden">Личный кабинет пользователя</span>Равшан Джамшутович</a>
                   <a class="user-nav__logout-icon" href="logout.html"><span class="visually-hidden">Выход из личного кабинета</span>
-                    <svg class="user-nav__image user-nav__image--logout" width="21" height="17"><use xlink:href="img/sprite.svg#sprite-icon-logout"></use></svg>
                   </a>
                 </div>
                 <ul class="user-nav__list user-nav__list--inner">
@@ -93,7 +87,7 @@
               <li class="bread-crumbs__item bread-crumbs__item--home">
                 <a href="index.html">
                   <span class="visually-hidden">Главная</span>
-                  <svg class="bread-crumbs__image" width="15" height="12"><use xlink:href="img/sprite.svg#sprite-icon-home"></use></svg>
+                  <img class="bread-crumbs__image" width="15" height="12" src="img/sprite-icon-home.svg" alt="Главная">
                 </a>
               </li>
               <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
@@ -172,15 +166,13 @@
                       </li>
                     </ul>
                     <ul class="sorting__list sorting__list--order">
-                      <li class="sorting__item sorting__item--icon">
-                        <a class="sorting__current" href="#">
-                          <svg class="sorting__image sorting__image--up" width="11" height="10"><use xlink:href="img/sprite.svg#sprite-icon-up-dir"></use></svg>
+                      <li class="sorting__item sorting__item--icon sorting__item--up">
+                        <a class="sorting__check--current" href="#">
                           <span class="visually-hidden">Сортировка от меньшего к большему</span>
                         </a>
                       </li>
-                      <li class="sorting__item sorting__item--icon">
-                        <a href="#">
-                          <svg class="sorting__image sorting__image--down" width="11" height="10"><use xlink:href="img/sprite.svg#sprite-icon-down-dir"></use></svg>
+                      <li class="sorting__item sorting__item--icon sorting__item--down">
+                        <a class="sorting__check" href="#">
                           <span class="visually-hidden">Сортировка от большего к меньшему</span>
                         </a>
                       </li>
@@ -191,7 +183,6 @@
                       <li class="product__item product__item--inner">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -206,7 +197,6 @@
                       <li class="product__item product__item--inner">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -221,7 +211,6 @@
                       <li class="product__item product__item--new product__item--flag">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -235,7 +224,6 @@
                       <li class="product__item">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -250,7 +238,6 @@
                       <li class="product__item product__item--flag">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -265,7 +252,6 @@
                       <li class="product__item product__item--new">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -279,7 +265,6 @@
                       <li class="product__item product__item--flag">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -294,7 +279,6 @@
                       <li class="product__item">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -309,7 +293,6 @@
                       <li class="product__item product__item--new">
                         <div class="product__overlay">
                           <a class="button button--product-buy" href="cart.html">
-                            <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                             <span>Купить</span>
                           </a>
                           <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -409,19 +392,16 @@
             <ul class="social social__list">
               <li class="social__item social__item--vk">
                 <a class="social__link" href="#">
-                  <svg class="social__icon" width="26" height="15"><use xlink:href="img/sprite.svg#sprite-icon-vk"></use></svg>
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="social__item social__item--fb">
                 <a class="social__link" href="#">
-                  <svg class="social__icon" width="12" height="22"><use xlink:href="img/sprite.svg#sprite-icon-fb"></use></svg>
                   <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
               <li class="social__item social__item--insta">
                 <a class="social__link" href="#">
-                  <svg class="social__icon" width="21" height="21"><use xlink:href="img/sprite.svg#sprite-icon-insta"></use></svg>
                   <span class="visually-hidden">Инстраграм</span>
                 </a>
               </li>
@@ -453,5 +433,6 @@
     <script src="js/svgxuse.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/catalog.min.js"></script>
+    <script src="js/svg4everybody.js"></script>
   </body>
 </html>

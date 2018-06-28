@@ -14,14 +14,11 @@
             <a class="logo logo--header" href="#"><span class="visually-hidden">Логотип</span><span class="logo__text">Техномарт</span></a>
             <form class="search" action="#" method="get">
               <input class="search__field" type="text" name="search" placeholder="Поиск:">
-              <svg class="search__image" width="17" height="17"><use xlink:href="img/sprite.svg#sprite-icon-search"></use></svg>
             </form>
             <a class="button button--header button--bookmarks" href="bookmark.html">
-              <svg class="button__image button__image--header" width="14" height="16"><use xlink:href="img/sprite.svg#sprite-icon-bookmark"></use></svg>
               <span class="button__link button__link--header">Закладки: 0</span>
             </a>
             <a class="button button--header button--cart" href="cart.html">
-              <svg class="button__image button__image--header" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
               <span class="button__link button__link--header">Корзина: 0</span>
             </a>
             <a class="button button--header button--order" href="#">Оформить заказ</a>
@@ -35,15 +32,13 @@
               <p class="header-info__text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
               <div class="header-contacts">
                 <div class="header-contacts__phone">
-                  <svg class="header-contacts__image" width="19" height="19"><use xlink:href="img/sprite.svg#sprite-icon-phone"></use></svg>
                   <a class="header-contacts__number" href="tel:+78125550555"><span class="visually-hidden">Номер телефона</span>+7 (812) 555-05-55</a>
                 </div>
                 <div class="header-contacts__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
               </div>
               <ul class="user-nav user-nav__list">
                 <li class="user-nav__item">
-                  <a class="user-nav__link" href="#">
-                    <svg class="user-nav__image user-nav__image--login" width="20" height="17"><use xlink:href="img/sprite.svg#sprite-icon-login"></use></svg>
+                  <a class="user-nav__link user-nav__link--login" href="#">
                     <span class="visually-hidden">Вход в личный кабинет</span>
                     <span class="user-nav__text">Войти</span>
                   </a>
@@ -160,7 +155,6 @@
                 <li class="product__item">
                   <div class="product__overlay">
                     <a class="button button--product-buy" href="cart.html">
-                      <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                       <span>Купить</span>
                     </a>
                     <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -175,7 +169,6 @@
                 <li class="product__item">
                   <div class="product__overlay">
                     <a class="button button--product-buy" href="cart.html">
-                      <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                       <span>Купить</span>
                     </a>
                     <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -190,7 +183,6 @@
                 <li class="product__item">
                   <div class="product__overlay">
                     <a class="button button--product-buy" href="cart.html">
-                      <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                       <span>Купить</span>
                     </a>
                     <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -205,7 +197,6 @@
                 <li class="product__item product__item--new product__item--flag">
                   <div class="product__overlay">
                     <a class="button button--product-buy" href="cart.html">
-                      <svg class="button__image button__image--cart" width="15" height="15"><use xlink:href="img/sprite.svg#sprite-icon-cart"></use></svg>
                       <span>Купить</span>
                     </a>
                     <a class="button button--product-bookmarks" href="bookmarks.html">В закладки</a>
@@ -337,8 +328,9 @@
                 <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис:</p>
               </div>
               <div class="contacts__map">
-                <span class="visually-hidden">Адрес магазина: г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                <iframe class="contacts__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177512!2d30.3208892515703!3d59.938796868959095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530043831003" width="300" height="158" style="border:0" allowfullscreen></iframe>
+                <a class="contacts__link" href="bigmap.html">
+                  <img class="contacts__image" src="img/map.png" width="300" height="158" alt="Адрес магазина: г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+                </a>
               </div>
               <a class="button button--red button--letter" href="writeus.html">Заблудились? Напишите нам!</a>
             </section>
@@ -400,19 +392,16 @@
             <ul class="social social__list">
               <li class="social__item social__item--vk">
                 <a class="social__link" href="#">
-                  <svg class="social__icon" width="26" height="15"><use xlink:href="img/sprite.svg#sprite-icon-vk"></use></svg>
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="social__item social__item--fb">
                 <a class="social__link" href="#">
-                  <svg class="social__icon" width="12" height="22"><use xlink:href="img/sprite.svg#sprite-icon-fb"></use></svg>
                   <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
               <li class="social__item social__item--insta">
                 <a class="social__link" href="#">
-                  <svg class="social__icon" width="21" height="21"><use xlink:href="img/sprite.svg#sprite-icon-insta"></use></svg>
                   <span class="visually-hidden">Инстраграм</span>
                 </a>
               </li>
@@ -454,12 +443,13 @@
       </form>
     </div>
     <div class="modal modal--map">
+      <span class="visually-hidden">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      <iframe class="modal__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177512!2d30.3208892515703!3d59.938796868959095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530043831003" width="942" height="447" style="border:0" allowfullscreen></iframe>
       <button class="modal__button-close modal__button-close--map" type="button"><span class="visually-hidden">Закрыть карту</span><span class="visually-hidden">x</span></button>
-      <img src="img/map-popup.png" width="942" height="447" alt="г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-      <span class="visually-hidden">Карта расположения магазина</span>
     </div>
     <script src="js/svgxuse.min.js"></script>
     <script src="js/picturefill.min.js"></script>
     <script src="js/index.min.js"></script>
+    <script src="js/svg4everybody.js"></script>
   </body>
 </html>
