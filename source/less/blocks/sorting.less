@@ -5,7 +5,7 @@
   background-color: #f7f3ec;
   text-transform: uppercase;
   display: flex;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .sorting__list {
@@ -138,11 +138,12 @@
   background-image: url(../img/sprite-icon-down-dir-active.svg);
 }
 
-.sorting__check--current {
+.sorting__current {
   position: relative;
+  margin-right: 11px;
 }
 
-.sorting__check--current::after {
+.sorting__current::after {
   content: "";
   position: absolute;
   width: 11px;
@@ -152,4 +153,13 @@
   background-image: url(../img/sprite-icon-up-dir-current.svg);
   background-position: 0 0;
   background-repeat: no-repeat;
+}
+
+.sorting__current::after:hover,
+.sorting__current::after:focus {
+  background-image: url(../img/sprite-icon-up-dir-current.svg);
+}
+
+.sorting__current::after:active {
+  background-image: url(../img/sprite-icon-up-dir-current.svg);
 }

@@ -712,7 +712,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
-  padding-top: 41px;
+  padding-top: 43px;
   padding-bottom: 40px;
   padding-left: 2px;
 }
@@ -764,7 +764,7 @@ template {
 .services {
   width: 940px;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -867,8 +867,6 @@ template {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 3px;
-  margin-left: 1px;
   margin-bottom: 24px;
 }
 .services__list {
@@ -1287,6 +1285,7 @@ template {
 }
 .page-header__wrapper--top {
   background-color: #293449;
+  min-height: 42px;
 }
 .page-header__wrapper--top .page-header__content-wrapper {
   display: -webkit-box;
@@ -1403,7 +1402,7 @@ template {
 .button--product-bookmarks {
   color: #32425c;
   border: 3px solid #63a63e;
-  padding-top: 8px;
+  padding-top: 7px;
 }
 .button--product-bookmarks:hover,
 .button--product-bookmarks:focus {
@@ -1488,6 +1487,7 @@ template {
 .main-nav {
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+  margin-top: 2px;
 }
 .main-nav__list {
   list-style: none;
@@ -1581,7 +1581,7 @@ template {
   padding-left: 12px;
   padding-bottom: 10px;
   background-image: url(../img/sprite-icon-phone.svg);
-  background-position: 12px 10px;
+  background-position: 12px 8px;
   background-repeat: no-repeat;
 }
 .page-header--inner .header-contacts__phone {
@@ -1788,8 +1788,8 @@ template {
   position: absolute;
   top: 220px;
   left: 295px;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background-color: transparent;
   background-image: url(../img/dot.png);
@@ -1948,7 +1948,7 @@ template {
   width: 940px;
   margin: 0 auto;
   padding-top: 77px;
-  padding-bottom: 84px;
+  padding-bottom: 86px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1968,7 +1968,7 @@ template {
 .page-main__block-wrapper {
   width: 940px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 58px;
 }
 .page-main--inner .page-main__block-wrapper {
   padding-top: 0;
@@ -1998,12 +1998,17 @@ template {
   margin-bottom: 31px;
 }
 .contacts__map {
-  margin-bottom: 38px;
+  margin-bottom: 41px;
 }
 .contacts__image {
   background-color: #f5f2ed;
 }
 .contacts .button--red {
+  display: block;
+  width: 300px;
+}
+.contacts__link,
+.contacts__image {
   display: block;
   width: 300px;
 }
@@ -2036,8 +2041,8 @@ template {
   padding: 0;
 }
 .page-footer__wrapper--bottom {
-  padding-top: 34px;
-  padding-bottom: 28px;
+  padding-top: 35px;
+  padding-bottom: 31px;
 }
 .page-footer__wrapper--top {
   background-color: #32425c;
@@ -2214,7 +2219,7 @@ template {
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-top: 22px;
+  padding-top: 20.5px;
   padding-bottom: 20px;
 }
 .bread-crumbs__item {
@@ -2418,7 +2423,7 @@ template {
   font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 48px;
   position: relative;
   margin-bottom: 10px;
 }
@@ -2437,7 +2442,6 @@ template {
   margin-left: 34px;
 }
 .form__item {
-  /*убрать*/
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -2448,9 +2452,7 @@ template {
 .form__checkbox-title {
   position: relative;
   padding-top: 9px;
-  /*убрать*/
   padding-bottom: 8px;
-  /*убрать*/
 }
 .form__checkbox-title::before {
   content: "";
@@ -2479,7 +2481,7 @@ template {
   background-image: url("../img/checkbox-on-active.svg");
 }
 .form__group--charge {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
   position: relative;
 }
 .form__group--charge::before {
@@ -2568,6 +2570,9 @@ template {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.form__title--price {
+  padding-bottom: 20px;
+}
 .sorting {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2577,7 +2582,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 .sorting__list {
   list-style: none;
@@ -2698,10 +2703,11 @@ template {
 .sorting__item--down .sorting__check:active::after {
   background-image: url(../img/sprite-icon-down-dir-active.svg);
 }
-.sorting__check--current {
+.sorting__current {
   position: relative;
+  margin-right: 11px;
 }
-.sorting__check--current::after {
+.sorting__current::after {
   content: "";
   position: absolute;
   width: 11px;
@@ -2712,6 +2718,13 @@ template {
   background-position: 0 0;
   background-repeat: no-repeat;
 }
+.sorting__current::after:hover,
+.sorting__current::after:focus {
+  background-image: url(../img/sprite-icon-up-dir-current.svg);
+}
+.sorting__current::after:active {
+  background-image: url(../img/sprite-icon-up-dir-current.svg);
+}
 .pagination {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -2719,7 +2732,7 @@ template {
   text-transform: uppercase;
   width: 285px;
   margin-left: 240px;
-  margin-top: 32px;
+  margin-top: 29px;
   margin-bottom: 59px;
 }
 .pagination__item a {
@@ -2804,7 +2817,7 @@ template {
   line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
 }
 .inner-text__wrapper {
   padding-top: 65px;
